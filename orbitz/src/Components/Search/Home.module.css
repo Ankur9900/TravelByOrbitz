@@ -1,0 +1,65 @@
+.home {
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=225&q=mediumHigh");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+    border: 1px solid brown;
+    margin-top: 10px;
+    width: auto;
+  }
+
+  .bid {
+    width: 90%;
+    height: 350px;
+    background-color: #fff;
+    background-Color: 'primary.main';
+    border: 1px solid rgb(0, 255, 34);
+      position: "absolute";
+      margin: auto;
+      margin-top: 50px;      
+      top: 50px;
+      padding: "0px 8px";
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+
+  .tabs {
+    width: 100%;
+    /* margin: 0px; */
+    font-size: 40px;
+    padding-Bottom: 8px;
+    height: 80px;
+    border: 1px solid black;
+};
+
+
+.tb {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content:space-evenly !important;
+  border:1px solid rgb(0, 255, 42);
+}
+
+
+/* ------------  Searchcomp --------- */
+.inp {
+  display: flex;
+  padding: 10px;
+  margin: 19px 0px
+}
+
+.btn1 {
+  margin-top: 10px;
+  width: 170px;
+  height: 49px;
+  background-color: rgb(200,50,89);
+  border-radius: 1px;
+  text-transform: none;
+  font-size: 18px;
+  color: white;
+  cursor:pointer;
+  border:0px;
+
+}

@@ -1,18 +1,21 @@
 import React from "react";
-import Searchbar from "../Search/Searchbar";
-
-import Section from "./Section";
+import Options from "./Options";
 import Travel from "./Travel";
 import Travelling from "./Travelling";
+import { Searchbar } from "../feature/Searchbar";
+import { Reward } from "./Reward";
+import Section1 from "./Section1";
 
 export const Home = () => {
   return (
     <div>
       <Searchbar />
-      <Section />
-      <Travel />
       <Travelling />
-      
+      <Travel />
+      <Options />
+      <Section1/>
+      <Reward />
     </div>
-  );
+  )
+
 };

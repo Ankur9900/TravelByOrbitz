@@ -1,0 +1,142 @@
+.home {
+  width: 100%;
+  height:500px;
+  border:1px solid  black;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=225&q=mediumHigh");
+  background-size: cover;
+  background-position: bottom;
+  
+  }
+
+  .containerSearchBox {
+    width:90%;
+    /* border:1px solid yellow; */
+    height:400px;
+    text-Align:center;
+    margin:auto;
+    margin-top:50px;
+    background:#fff;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    gap:20px;
+    border-radius: 10px;
+
+  }
+
+
+  .Flight{
+   /* border: 1px solid red; */
+   width: 80%;
+   margin: auto;
+   font-size: 20px;
+   justify-content: space-between;
+   border-bottom: 1px solid #6d6868;
+  }
+
+
+.flat{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.flat h3 {
+  color: #616161;
+  cursor: pointer;
+  display: grid;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.125rem;
+}
+
+.flat h3 :nth-last-child(1){
+  background-color: teal;
+  border-bottom: teal;
+}
+
+
+.flat h3:hover{
+  color: rgb(15, 94, 94);
+  border-bottom: 2px solid teal;
+}
+
+
+
+.icon {
+ height: 50px;
+ margin-bottom: -30px;
+}
+
+
+
+
+
+
+
+
+/* 
+  .checkboxes {
+    display: flex;
+    align-items: center;
+    margin: 5px 1px;
+    font-size: 14px;
+    height: 10px;
+    width: 350px;
+    border: 1px solid blue;
+  } */
+
+
+
+/* 
+  .flight_div {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .car_div {
+    margin: 0px;
+    padding: 0px;
+  }
+  .checkboxStyle1 {
+    color: #b3c9be;
+    transform: scale(1);
+  }
+  .checkboxStyle2 {
+    color: #c5d4cd;
+    transform: scale(1);
+  }
+  .BG_style {
+    border: 1px solid grey;
+    background-color: #f5f5f5;
+  }
+
+  .eicon{
+    width: "20px";
+    fill: "#465280";
+  }
+
+  .importbox{
+    padding-top: 80px;
+    font-weight: bold;
+    padding-left: 20px;
+    filter: brightness(1);  
+  }
+
+
+  .importbox >p{
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .importbox >h1{
+    color: white;
+  }
+
+  .hed{
+    font-size: 25px;
+  }
+
+  .darkimg{
+      filter: brightness(70%);
+  } */

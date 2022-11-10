@@ -1,0 +1,51 @@
+
+.box{
+    width: 90%;
+    color: #616161;
+    /* margin: auto; */
+    /* border: 1px solid #b6acac; */
+    justify-content: start;
+}
+
+.Input {
+  display: flex;
+  margin: auto;
+  text-align: start;
+  justify-items: start;
+  justify-content: space-evenly;
+  gap: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+.check{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    color: #616161;
+    cursor: pointer;
+    display: grid;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+}
+
+
+.but{
+    background-color: #C83259;
+    color: #FFFFFF;
+    border-radius: 5px;
+    /* font-size: 0.50rem; */
+    font-size: 20px;
+    line-height: 1rem;
+    min-block-size: 3rem;
+    padding: 1rem 4rem;
+    border: none;
+    /* margin-top: 30px; */
+}

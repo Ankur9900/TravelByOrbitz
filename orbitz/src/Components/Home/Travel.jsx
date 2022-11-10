@@ -100,6 +100,7 @@ justify-content: start;
 `
 const ImgCardCont = styled.div`
     position: relative;
+    ${'' /* margin-bottom:30px; */}
 `
 const Title = styled.div`
     position: absolute;
@@ -118,13 +119,11 @@ const Title = styled.div`
 const TextCont = styled.div`
 padding-left: 0.75rem;
 padding-bottom: 0.75rem;
-margin-top: -0.3rem;
+margin-top: -1.3rem;
 background-color: #ffffff;
 p{
     color: #616161;
     font-size: 0.875rem;
     font-weight: normal;
     line-height: 1.3em;
-}
-
-`
+}`

@@ -5,7 +5,7 @@ import { RiHotelFill } from 'react-icons/ri';
 import { RiCarFill, RiSuitcase2Fill, RiShipFill } from 'react-icons/ri';
 import { MdOutlineFlight } from 'react-icons/md';
 import { BsFillInboxesFill } from 'react-icons/bs';
-// import logo from "../image/logo.jpeg"
+import TRABITZ from "../image/TRABITZ.png"
 import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 import { useSelector } from 'react-redux';
 
@@ -24,11 +24,11 @@ const Navbar = () => {
       <div className={styles.navbar_logo_div}>
         <Link to="/">
           <img
-            src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2"
-            // src={logo}
+            // src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2"
+            src={TRABITZ}
             alt="Brand logo"
-            // width="60px"
-            // heigth="35px"
+            width="160px"
+            heigth="45px"
           />
         </Link>
         {/* <section ref={ref}> */}
@@ -78,9 +78,9 @@ const Navbar = () => {
                 <BsFillInboxesFill fontSize={'1.3rem'} />
                 <p>Things to do</p>
               </div>
-              <p>Deals</p>
-              <p>Group & meetings</p>
-              <p>Travel Blog</p>
+              <p className={styles.para1}>Deals</p>
+              <p className={styles.para2}>Group & meetings</p>
+              <p className={styles.para3}>Travel Blog</p>
             </div>
           )}
         </div>

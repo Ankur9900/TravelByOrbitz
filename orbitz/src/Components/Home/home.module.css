@@ -58,25 +58,26 @@
     width: "20px";
     fill: "#465280";
   }
-  .importbox{
-
-    /* border: 1px solid red; */
+  .textarea{
     padding-top: 80px;
     font-weight: bold;
     padding-left: 20px;
     filter: brightness(1);
-    
-    
   }
-  .importbox >p{
-    color: white;
+    
+
+  .textarea >p{
+    color:#fff;
+    /* color: #616161; */
     padding-top: 5px;
     padding-bottom: 5px;
   }
-  .importbox >h1{
-    color: white;
-  }
 
+  .textarea >h1{
+    color: #fff;
+  }
+  
+  
   .hed{
     font-size: 25px;
   }

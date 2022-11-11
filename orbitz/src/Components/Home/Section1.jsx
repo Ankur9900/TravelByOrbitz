@@ -41,8 +41,9 @@ export default function Section1() {
     )
 }
 const MainCont = styled.div`
-    padding-bottom: 0.75rem;
-    //padding-top: 0.75rem;
+    padding-bottom: 2.75rem;
+    ${'' /* //padding-top: 0.75rem; */}
+
 `
 const Cont = styled.div`
     padding: 0.75rem 0.75rem 1.5rem 0.75rem;

@@ -32,7 +32,7 @@ export default function Travel() {
         <MainCont>
             <Cont>
                 <Heading>
-                    <h3>Featured offers </h3>
+                    <h3>Featured Offers </h3>
                 </Heading>
                 <ImgCont>
                     {img.map((i) => (
@@ -55,9 +55,10 @@ export default function Travel() {
 const MainCont = styled.div`
     padding-bottom: 0.75rem;
     padding-top: 0.75rem;
-    border:1px solid black;
+    ${'' /* border:1px solid black; */}
     width:80%
     margin:auto;
+    box-shadow :rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `
 const Cont = styled.div`
     padding: 0.75rem 0.75rem 0.75rem 0.75rem;

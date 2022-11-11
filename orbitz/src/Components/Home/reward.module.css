@@ -1,51 +1,141 @@
-
-.box{
-    width: 90%;
-    color: #616161;
-    /* margin: auto; */
-    /* border: 1px solid #b6acac; */
-    justify-content: start;
-}
-
-.Input {
-  display: flex;
-  margin: auto;
-  text-align: start;
-  justify-items: start;
-  justify-content: space-evenly;
-  gap: 10px;
-  cursor: pointer;
+.newdiv{
+    width:90%;
+    height: 400px;
+    /* borderWidth:1px; */
+    border: 1px solid black;
+    margin:auto;
+      margin-bottom: 50px;
+      display:flex;
 }
 
 
+.flexxx{
+    border:1px solid yellow;
+    background-color :#fff;
+    box-shadow :rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* width: 30%; */
+    height: 400px;
+    width: 300px;
+}
 
+.flexxx img {
+    width: 100%;
+    height: 400px;
+}
 
-
-.check{
-    /* border: 1px solid red; */
-    width: 80%;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    justify-content: space-evenly;
-    color: #616161;
-    cursor: pointer;
-    display: grid;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.125rem;
+.department{
+    border: 1px solid black;
+    height: 100px;
 }
 
 
-.but{
-    background-color: #C83259;
-    color: #FFFFFF;
-    border-radius: 5px;
-    /* font-size: 0.50rem; */
-    font-size: 20px;
-    line-height: 1rem;
-    min-block-size: 3rem;
-    padding: 1rem 4rem;
-    border: none;
-    /* margin-top: 30px; */
+.details{
+   /* border: 1px solid red; */
+   /* width: 50%; */
+   height: 400px;
+   display: flex;
 }
+
+
+
+.root {
+    flex-grow: 1;
+    margin-top: 20px;   
+}  
+
+.Card{
+        display: grid;
+        grid-template-columns:35% 52% 13% ;
+        width: 90%;
+        height: 400px;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .Image{
+        width: 100%;
+        height: 100%;
+        object-fit:cover ;
+    }
+
+    .Text{
+        color: #1F1F1F;
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 2rem;
+        margin-top: 1rem;
+        /* border: 1px solid blue; */
+        /* margin-top: 10px; */
+    }
+  .Threetext{
+      text-align: start;
+      font-weight: 600;
+      font-size: 1rem;
+  }
+
+    .Text1{
+        color: #616161;
+        font-size: 0.85rem;
+        line-height:1.5rem;
+        /* border: 1px solid blue; */
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .Text2 {
+        margin-top: 15px;
+        font-weight: bolder;
+          /* border: 1px solid blue; */
+          text-align: left;
+          font-size: 1.2rem;
+    }
+
+    .Box2 {
+        padding: 2% 4%;
+        /* border: 1px solid blue; */
+    }
+    .Box3 {
+        text-align:center;
+        align-items: center;
+        margin-top: 1.5rem;
+        /* border: 1px solid blue; */
+    }
+   .Input{
+    margin-top: 20px;
+    margin-bottom: 10px;
+   }
+
+   .Box3 img {
+    width: 100%;
+   }
+
+    .TexQR{
+        font-weight:bolder;
+    }
+    .InputBox{
+        margin: 20px 0 ;
+        /* border: 1px solid blue; */
+        width: 100px;
+    }
+
+    .TextFeild{
+        width: 30%;
+        margin-left: 10px;
+    }
+
+    .Button{
+        width: 30%;
+        height: 45px;
+        margin-left: 10px;
+        background: #CF4B6D;
+        color:white;
+       border: none;
+    }
+
+    .text3{
+        font-size: 12px;
+        color:#616161;
+        margin-top: 30px;
+        font-weight: 600;
+    }
+ 
+ 

@@ -9,20 +9,18 @@ import { RiMoneyDollarBoxFill } from "react-icons/ri";
 import { Box, Button, Grid, GridItem, Image } from "@chakra-ui/react";
 
 export default function Options() {
-  const firstimg = [
+  const Image = [
     {
       url: "https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_1199x399_20211117.jpg",
       title: "National Parks",
       dis: "There's plenty to keep you busy.",
       btnname: "Learn more",
-      btnurl: "",
     },
     {
       url: "https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_RoadTrips_imgB_1199x399_20211117.jpg",
       title: "The perfect road trip",
       dis: "Find an adventure for every season.",
       btnname: "Read on",
-      btnurl: "",
     },
   ];
 
@@ -86,34 +84,34 @@ export default function Options() {
         <GridItem
           w="100%"
           h="255"
-          bgImage={firstimg[0].url}
+          bgImage={Image[0].url}
           bgPosition="center"
           bgRepeat="no-repeat"
         >
-          <div className={styles.importbox}>
-            <h1 className={styles.hed}>{firstimg[0].title}</h1>
-            <p> {firstimg[0].dis}</p>
-            <Button>{firstimg[0].btnname}</Button>
+          <div className={styles.textarea}>
+            <h1 className={styles.hed}>{Image[0].title}</h1>
+            <p> {Image[0].dis}</p>
+            <Button fontSize={20} borderRadius={"2px"} border="none">{Image[0].btnname}</Button>
           </div>
         </GridItem>
         <GridItem
           w="100%"
           h="255"
-          bgImage={firstimg[1].url}
+          bgImage={Image[1].url}
           bgPosition="center"
           bgRepeat="no-repeat"
         >
-          <div className={styles.importbox}>
-            <h1 className={styles.hed}>{firstimg[1].title}</h1>
-            <p> {firstimg[1].dis}</p>
-            <Button>{firstimg[1].btnname}</Button>
+          <div className={styles.textarea}>
+            <h1 className={styles.hed}>{Image[1].title}</h1>
+            <p> {Image[1].dis}</p>
+            <Button borderRadius={"2px"} fontSize={20} border="none">{Image[1].btnname}</Button>
           </div>
         </GridItem>
       </Grid>
      <Box gap="20px">
-     <Box h={60} marginBottom="50px">
+     {/* <Box h={60} marginBottom="50px">
         <Image src={secimag}  style={{ margin: "auto", paddingTop: "55px" }} />
-      </Box>
+      </Box> */}
       {/* <Box width={"100%"} margin="auto" marginBottom="50px" >
         <Image src={"https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"} style={{ margin: "auto", paddingTop: "55px" }} />
       </Box> */}
@@ -129,6 +127,7 @@ const MainCont = styled.div`
   width: 90%;
   margin: auto;
   marginBottom:40px
+  box-shadow :rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 const Cont = styled.div`
   padding: 0.75rem 0.75rem 1.5rem 0.75rem;

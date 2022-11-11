@@ -5,6 +5,7 @@ import Travelling from "./Travelling";
 import { Searchbar } from "../feature/Searchbar";
 import { Reward } from "./Reward";
 import Section1 from "./Section1";
+import "./home.css"
 
 export const Home = () => {
   return (
@@ -15,6 +16,7 @@ export const Home = () => {
       <Options />
       <Section1/>
       <Reward />
+     
     </div>
   )
 

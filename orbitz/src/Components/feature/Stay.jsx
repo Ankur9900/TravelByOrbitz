@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Button,
   Checkbox,
@@ -19,35 +19,20 @@ import { Flex, Box } from "@chakra-ui/react";
 import styles from "./style.module.css";
 import { FaUserAlt } from "react-icons/fa";
 import { ImLocation2 } from "react-icons/im";
+import Main from "./Search/Main";
+import  {City} from "../../Components/feature/utils/City"
+
+console.log(City)
 
 export const Stay = () => {
-  const places = [
-    {
-      label: "Bangalore",
-      value: "Bangalore",
-      id: 1,
-    },
-    {
-      label: "Delhi",
-      value: "Delhi",
-      id: 2,
-    },
-    {
-      label: "Pune",
-      value: "Pune",
-      id: 3,
-    },
-    {
-      label: "Hyderabad",
-      value: "Hyderabad",
-      id: 4,
-    },
-    {
-      label: "Mumbai",
-      value: "Mumbai",
-      id: 5,
-    },
-  ];
+  const [query, Setquery ] = useState({})
+
+ const handleChange = (e) =>{
+   const {name ,value} = e.target;
+   Setquery({...query, [name]:value});
+
+ }
+
 
   return (
     <>
@@ -58,20 +43,37 @@ export const Stay = () => {
             justifyItems={"center"}
             // border="1px solid gray"
           >
+             {/* <Main  /> */}
+
             <Input
+            // name="City"
+            // option="City"
               placeholder="Where You want to go"
               textAlign={"center"}
               width={"200px"}
               height="50px"
               fontSize={14}
               fontWeight="500"
-            />
+              // onChange={handleChange}
+            > 
+            {/* {
+               City.map((place)=>{
+                return <div key={place.City}> </div>
+               })
+             
+            } */}
+            </Input>
+
           </HStack>
+          
           <Input
             placeholder="Select Date and Time"
             label="Check-in"
-            size="md"
+            width="150px"
+            height="50px"
             type="date"
+            fontSize={20}
+            color="#616161"
             variant="outlined"
             defaultValue="2022-11-14"
             InputLabelProps={{
@@ -82,8 +84,11 @@ export const Stay = () => {
           <Input
             placeholder="Select Date and Time"
             label="Check-out"
-            size="md"
+            width="150px"
+            height="50px"
             type="date"
+            fontSize={20}
+            color="#616161"
             variant="outlined"
             defaultValue="2022-11-16"
             InputLabelProps={{
@@ -97,9 +102,9 @@ export const Stay = () => {
             justifyContent={"center"}
             height="50px"
           >
-            <HStack mt={"10px"} justifyItems={"end"}>
-              <FaUserAlt justifyContent="start" />
-              <Text ml={10} fontSize={14} textAlign="end" fontWeight="500">
+            <HStack mt={"10px"} justifyContent="space-evenly">
+              <FaUserAlt justifyContent="center" />
+              <Text ml={"20px"} fontSize={20} fontWeight="450" textAlign="center">
                 Travelers
               </Text>
             </HStack>

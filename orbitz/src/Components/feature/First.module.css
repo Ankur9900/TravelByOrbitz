@@ -1,7 +1,7 @@
 .home {
   width: 100%;
-  height:500px;
-  border:1px solid  black;
+  height:550px;
+  border:1px solid  #616161;
   background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=225&q=mediumHigh");
   background-size: cover;
   background-position: bottom;
@@ -11,7 +11,7 @@
   .containerSearchBox {
     width:90%;
     /* border:1px solid yellow; */
-    height:400px;
+    height:450px;
     text-Align:center;
     margin:auto;
     margin-top:50px;
@@ -55,17 +55,14 @@
   border-bottom: teal;
 }
 
-
 .flat h3:hover{
   color: rgb(15, 94, 94);
   border-bottom: 2px solid teal;
 }
 
-
-
 .icon {
  height: 50px;
- margin-bottom: -30px;
+ /* margin-bottom: -30px; */
 }
 
 

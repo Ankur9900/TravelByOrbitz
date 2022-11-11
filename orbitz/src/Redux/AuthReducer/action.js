@@ -45,7 +45,7 @@ export const signin_attemp = (payload) => (dispatch) => {
         alert('user not found please try again');
       } else {
         dispatch(auth_success(res.data));
-        alert('success');
+        alert('you login successful');
       }
    
     })

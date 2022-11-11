@@ -102,7 +102,7 @@
     color: #00a4bb;
     text-decoration: none;
     text-align: center;
-    margin-left: 90px;
+  
 }
 
 .signup_btn:hover {
@@ -156,4 +156,13 @@
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.para1{
+    margin-left: -252px;
+}
+.para2{
+    margin-left:-160px;
+}
+.para3{
+    margin-left:-213px;
 }

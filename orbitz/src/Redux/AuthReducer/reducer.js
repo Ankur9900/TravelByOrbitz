@@ -1,14 +1,13 @@
-
-import { LocalData, saveData } from '../../Utilis/LocalData'
 import { auth_actions } from './action';
-const initialState = {
-    isAuth: LocalData('token') === "" ? false : true,
-    token: LocalData("token") || "",
-    user:LocalData("token") || "admin",
-    isLoading: false,
-    isError: false,
 
-}
+const initialState = {
+  token: '',
+  auth: false,
+  isLoading: false,
+  isError: false,
+  data:null
+};
+
 export const auth_reducer = (state = initialState, action) => {
   switch (action.type) {
     case auth_actions.REQUEST:

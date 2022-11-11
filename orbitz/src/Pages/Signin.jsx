@@ -17,14 +17,16 @@ const SignIn = () => {
 
   const [loginData, setLoginData] = useState(initialState)
   const [icon , setIcon]=useState(eyeOff)
+  const [pass, setPass]= useState(false);
+
 
   const handleToggle=()=>{
-    if(loginData==='password'){
+    if(pass===false){
       setIcon(eye);
-      setLoginData("text")
+      setPass(true)
     }else{
       setIcon(eyeOff);
-      setLoginData('password')
+      setPass(false)
     }
   }
 

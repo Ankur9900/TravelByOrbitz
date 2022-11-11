@@ -16,13 +16,16 @@ const SignUp = () => {
   const navigate = useNavigate()
   const [icon , setIcon]=useState(eyeOff)
 
+  const [pass, setPass]= useState(false);
+
+
   const handleToggle=()=>{
-    if(form==='password'){
+    if(pass===false){
       setIcon(eye);
-      setForm("text")
+      setPass(true)
     }else{
       setIcon(eyeOff);
-      setForm('password')
+      setPass(false)
     }
   }
 
@@ -71,7 +74,7 @@ const SignUp = () => {
           />
 
           <input
-            type={form}
+            type={pass? "text":"password"}
             name="password"
             placeholder="Password"
             required

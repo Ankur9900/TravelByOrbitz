@@ -69,7 +69,6 @@ export default function SearchBar({ suggetsion, queryHandler }) {
 
 const SuggetionBox = styled.div`
   border: 1px solid #616161;
-  ${'' /* display: flex; */}
   flex-direction: column;
   ${'' /* max-height: ${({ len }) => `${len * 38.687}px `}; */}
   max-height:40px;
@@ -77,6 +76,7 @@ const SuggetionBox = styled.div`
   overflow: hidden;
   fontSize:14px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  
   & * {
     flex: 1;
     text-align: left;

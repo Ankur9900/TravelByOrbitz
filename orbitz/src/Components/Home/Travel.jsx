@@ -6,22 +6,26 @@ const img =
         {
             url: "https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_LastMinute_imgB_900x600_20211101.jpg?impolicy=fcrop&w=600&h=400&q=medium",
             title: "last-minutes deals",
-            p: "Getaway today."
+            p: "Getaway today.",
+            id:1,
         },
         {
             url: "https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_AllInclusive_imgB_900x600_20211101.jpg?impolicy=fcrop&w=600&h=400&q=medium",
             title: "All - inclusive resorts",
-            p: "Enjoy sun and fun"
+            p: "Enjoy sun and fun",
+            id:2,
         },
         {
             url: "https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_MOD_imgB_900x600_20211101.jpg?impolicy=fcrop&w=600&h=400&q=medium",
             title: "Insider Prices",
-            p: "Members get rewareded"
+            p: "Members get rewareded",
+            id:3,
         },
         {
             url: "https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_JetAndReset_imgB_900x600_20211101.jpg?impolicy=fcrop&w=600&h=400&q=medium",
             title: "Jet ans reset",
-            p: "Fly some where beachy and warm"
+            p: "Fly some where beachy and warm",
+            id:4,
         }
     ]
 
@@ -36,9 +40,9 @@ export default function Travel() {
                 </Heading>
                 <ImgCont>
                     {img.map((i) => (
-                    <CardCont>
+                    <CardCont key={i.id}>
                             <ImgCardCont>
-                                <img src={i.url} alt="" />
+                                <img src={i.url} alt="travel" key={i.id}/>
                                 <Title><h2>{i.title}</h2></Title>
                             </ImgCardCont>
                             <TextCont>

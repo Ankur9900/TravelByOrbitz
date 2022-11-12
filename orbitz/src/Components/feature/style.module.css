@@ -19,10 +19,13 @@
   cursor: pointer;
 }
 
-.Input :hover{
-    /* border: 1px solid teal; */
-}
 
+.cityy{
+    border: 1px solid burlywood;
+    /* display: flex; */
+    font-size: 10px;
+    /* margin-top: 120px; */
+}
 
 
 .check{

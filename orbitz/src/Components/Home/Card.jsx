@@ -16,26 +16,6 @@ import {
 import styled from 'styled-components';
  
 
-const countries = [
-    {
-        value: 'USD',
-        label: 'USA +1',
-    },
-    {
-        value: 'IN',
-        label: 'INDIA +91',
-    },
-    {
-        value: 'BTN',
-        label: 'Bhutan',
-    },
-    {
-        value: 'SR',
-        label: 'SriLanka',
-    },
-];
-
-
 export default function RewardCard() {
   const  root= {
         flexGrow: 1,

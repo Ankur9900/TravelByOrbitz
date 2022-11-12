@@ -1,11 +1,11 @@
 import React, { useCallback, useEffect, useState } from "react";
 import SearchBar from "./Searchbar";
-import { City } from "../utils/City";
+import { India } from "../utils/Indiacity";
 
   export default function Main() {
   const [Query, setQuery] = useState(" ");
   const [suggetsion, SetSuggestion] = useState([]);
-  // console.log(Query);
+  console.log(Query);
 
   const queryHandler = useCallback((val) => {
     console.log(val);
@@ -17,20 +17,17 @@ import { City } from "../utils/City";
       SetSuggestion([]);
     } else {
       let inputtext = Query.toLowerCase();
-      let newsuggest = City.filter((item) => {
-        return item.City.toLowerCase().indexOf(inputtext) !== -1
+      let newsuggest = India.filter((item) => {
+        return item.city.toLowerCase().indexOf(inputtext) !== -1
           ? true
           : false;
-      }).map((item) => item.City);
+      }).map((item) => item.city);
       SetSuggestion(newsuggest);
-      // console.log(newsuggest);
     }
   }, [Query]);
 
   return (
     <div>
-      {/* <h1>Search Box </h1> */}
-      {/* <h1>Search Query {Query} </h1> */}
       <SearchBar suggetsion={suggetsion} queryHandler={queryHandler} />
     </div>
   );

@@ -16,7 +16,7 @@ export const Searchbar = () => {
     <div className={styles.home}>
       <Box className={styles.containerSearchBox}>
         <Tabs>
-          <div className={styles.Flight} mt="50px"  borderBottom="1px solid gray" justifyContent="space-evenly" style={{ justifyContent: "center" }}>
+          <div className={styles.Flight} mt="50px"   style={{ justifycontent: "center" }}>
            <div className={styles.flat}> 
            <div >
             <AiFillHome className={styles.icon} />

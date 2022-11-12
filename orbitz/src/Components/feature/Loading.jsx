@@ -1,6 +1,5 @@
 import react from "react";
-import { Spinner } from "@chakra-ui/react";
-import  Travel from "../../img/Travel.png"
+
 import "./Loding.css"
 
 export const Loading = () => {

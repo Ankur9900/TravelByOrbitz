@@ -56,7 +56,7 @@ const SignIn = () => {
         <div className={styles.signin_div}>
           <h1>Sign in</h1>
           <input type="email" name="email" placeholder='Email address' onChange={e => { setLoginData({ ...loginData, [e.target.name]: e.target.value }) }} />
-          <input type={loginData} name="password" placeholder="Password" onChange={e => { setLoginData({ ...loginData, [e.target.name]: e.target.value }) }} />
+          <input type={pass? "text":"password"} name="password" placeholder="Password" onChange={e => { setLoginData({ ...loginData, [e.target.name]: e.target.value }) }} />
           <span className={styles.togg} onClick={handleToggle}><Icon icon ={icon} size={25}/></span>
           <div>
             <input
@@ -79,7 +79,7 @@ const SignIn = () => {
               : true
           } className={styles.button} type="submit">Continue</button>
 
-          <Link to=''>Forgot Password</Link>
+          <Link to='/forget'>Forgot Password</Link>
           <p >
             Don't have an account? <Link to='/signup'>Create one</Link>
           </p>

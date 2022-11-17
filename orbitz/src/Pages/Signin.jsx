@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, Navigate } from 'react-router-dom'
-import { signin_attemp } from '../Redux/AuthReducer/action'
+import { signin_attemp } from '../Redux/Auth/action'
 import styles from './Signin.module.css'
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
 import {eye} from 'react-icons-kit/feather/eye'

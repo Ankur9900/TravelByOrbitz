@@ -1,0 +1,171 @@
+.container {
+    background-color: #f5f5f5;
+    width: 100%;
+    
+  }
+  .innerContainer {
+    width: 100%;
+    margin: auto;
+    background-color: white;
+  }
+  .imageContainer {
+    display: flex;
+    width: 99%;
+    height: 350px;
+    margin: 19px auto;
+  }
+  .imageContainer > div {
+    width: 50%;
+    height: 100%;
+    margin: 1px;
+  }
+  .imageContainer > div > img {
+    width: 100%;
+    height: 100%;
+  }
+  .imageContainer > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .imageContainer > div > div {
+    width: 48%;
+    height: 50%;
+    margin: 1px 2px;
+  }
+  .imageContainer > div > div > img {
+    width: 100%;
+    height: 99%;
+  }
+  .detailsDiv {
+    height: 690px;
+    width: 99%;
+    margin: 5px auto;
+    padding: 0px 25px;
+    display: flex;
+  }
+  .tabContainer {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0;
+    border-bottom: 1px solid rgb(185, 190, 185);
+    padding: 0px;
+    height: 50px;
+    width: 99%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: white !important;
+    z-index: 7;
+  }
+  .ratingDiv {
+    display: flex;
+    padding: 0px;
+  }
+  .detailsDiv > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  .detailsDiv > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1px;
+  }
+  .mapDiv {
+    height: 50%;
+  }
+  .detailsSub {
+    height: 210px;
+    padding: 1px;
+    margin: 15px 0px;
+  }
+  .roomDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(245, 245, 245);
+  }
+  .areaDiv {
+    height: 1000px;
+    width: 99%;
+    margin: auto;
+  }
+  .amenities {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 19px 0px;
+  }
+  .amenities > p {
+    width: 47%;
+  }
+  .explore {
+    display: flex;
+    flex-direction: column;
+  }
+  .subArea {
+    display: flex;
+    justify-content: space-between;
+  }
+  .subArea > div:nth-child(1) {
+    width: 30% !important;
+    font-size: 14px;
+  }
+  .others {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  .others p {
+    font-size: 15px;
+  }
+  .others > div {
+    width: 48%;
+    margin-left: 13px;
+  }
+  * {
+    color: rgb(37, 35, 35);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .flexDisp {
+    display: flex;
+    align-items: center;
+  }
+  .detailsDiv > div > div > h2 {
+    margin-bottom: 0px !important;
+    font-size: 29px;
+    font-weight: 700;
+  }
+  .rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .nameDiv {
+    margin-left: 1px;
+  }
+  .outer {
+    width: 93%;
+    margin: auto;
+  }
+  .rate_div {
+    color: grey;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  .starIcon {
+    color: "#807d7d";
+  }
+  .exploreSection {
+    margin: 0;
+    margin-top: 60px;
+  }
+  .amenities_crad {
+    width: 100%;
+    margin: auto;
+  }
+  

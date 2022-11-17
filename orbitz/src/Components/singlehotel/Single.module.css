@@ -1,0 +1,50 @@
+.mainBox {
+    display: flex;
+    gap: 30px;
+    margin: 20px 0 25px 0;
+    box-shadow: rgba(149, 149, 149, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+}
+
+ 
+.hotel_pic {
+    width: 30%;  
+    /* height: max-content;  */
+} 
+
+.hotel_pic>img {
+    width: 100%;
+    /* width: 300px; */
+    /* height: 150px; */
+    border-radius: 7px;
+}
+
+.middle_feature {
+    display: flex;
+    column-gap: 20px;
+}
+
+
+.deatails_div {
+    font-size: 20px;
+     margin: auto;
+      justify-content: center;
+    /* border:1px solid black; */
+}
+
+.price_div {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    gap: 100px
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    text-decoration: none;
+        color: black;
+}

@@ -1,0 +1,47 @@
+.filter{
+    border: 1px solid rgb(204, 199, 199);
+}
+.upper{
+    margin-bottom: 50px;
+}
+
+.serachpro{
+ margin: 10px;
+ font-size: 20px;
+
+}
+
+.serachpro + h4{
+    font-size: 15px;
+}
+
+.popular{
+    margin: 10px;
+    line-height: 20px;
+    padding: 10px 5px;
+}
+
+.popular >div{
+     margin-top: 10px;
+}
+
+.pernight{
+    margin: 10px;
+}
+
+.guest{
+    margin-top: 10px;
+}
+
+.guest > div{
+    margin-top: 10px;
+}
+
+.guest > button{
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    background-color: rgb(224, 45, 75);
+}

@@ -59,7 +59,10 @@ const Navbar = () => {
               <div>
                 {' '}
                 <RiHotelFill fontSize={'1.3rem'} />
+                  <Link to="/hotels">
                 <p> Stays</p>
+                  </Link>
+
               </div>
               <div>
                 <MdOutlineFlight fontSize={'1.3rem'} />

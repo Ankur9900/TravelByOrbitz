@@ -1,26 +1,20 @@
-
 import './App.css';
-import Footer from './Components/Footer/Footer';
-import HelpBot from './Components/helpbot/HelpBot';
-import AllRoutes from './Routes/AllRoutes';
 
-import { Loading } from './Components/feature/Loading';
-import Main from './Components/feature/Search/Main';
-import { Home } from './Components/Home/Home';
-
-// import Navbar from './Components/Navbar/Navbar';
-
+import { Searchbar } from './feature/Searchbar';
+import { Home } from './Home/Home';
+import Travel from './Home/Travel';
+import AllRoutes from './Routes/Routes';
 
 function App() {
-  
+
   return (
     <div className="App">
-      <AllRoutes />
-      <Home />
-      <HelpBot />
-      <Footer />
+
+       <AllRoutes/>
+        
     </div>
-  );
+  )
+
 }
 
 export default App;

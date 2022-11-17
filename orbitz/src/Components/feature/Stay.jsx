@@ -1,24 +1,97 @@
 import React, { useState } from "react";
-import { Button, Checkbox, HStack, Input, Stack, Text,Box } from "@chakra-ui/react";
+import { Button, Checkbox, HStack, Input, Stack, Text, Box } from "@chakra-ui/react";
 import "./stay.css";
 import { Flex } from "@chakra-ui/react";
 import styles from "./style.module.css";
 import { FaUserAlt } from "react-icons/fa";
-import { ImLocation2 } from "react-icons/im";
-import Main from "./Search/Main";
-// import { India } from "./utils/Indiacity";
-// console.log(India);
- import India from "../../Data.json"
- import City from "./CitySearch"
+import { makeStyles, TextField, MenuItem } from "@mui/material"
+import { useLocation } from "react-router-dom";
+import useHistory  from 'use-history'
+import {useDispatch} from "react-redux"
+// import {search} from "../Redux/Queries/actions"
+import { useNavigate } from "react-router-dom";
 
- export const Stay = () => {
-  const [query, SetQuery] = useState({});
+export const Stay = () => {
+  const [addFlight, setAddFlight] = useState(false);
+  const [addCar, setAddCar] = useState(false);
+  // const dispatch = useDispatch();
+  // let history = useHistory();
+  const navigate = useNavigate()
+  const [queryDetails, setQueryDetails] = useState({});
 
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   SetQuery({ ...query, [name]: value });
+
+  
+  const places = [
+    {
+      label: "Bangalore",
+      value: "Bangalore",
+    },
+    {
+      label: "Delhi",
+      value: "Delhi",
+    },
+    {
+      label: "Pune",
+      value: "Pune",
+    },
+    {
+      label: "Hyderabad",
+      value: "Hyderabad",
+    },
+    {
+      label: "Mumbai",
+      value: "Mumbai",
+    },
+  ];
+
+
+  const  date= {
+      marginTop: "10px",
+      marginRight: "10px",
+      fill: "#616161",
+    }
+    
+  const btn1 = {
+    marginTop: "10px",
+    width: "170px",
+    // height: "49px",
+    backgroundColor: "rgb(200,50,89)",
+    borderRadius: "1px",
+    textTransform: "none",
+    fontSize: "18px",
+    // color: "white",
+    cursor: "pointer",
+    border: "0px",
+  }
+  const btn2 = {
+    width: "180px",
+    height: "49px",
+    backgroundColor: "rgb(200,50,89)",
+    borderRadius: "3px",
+    textTransform: "none",
+    fontSize: "18px",
+    position: "absolute",
+    bottom: 20,
+    left: 510,
+    color: "white",
+    cursor: "pointer",
+    border: "0px",
+  }
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setQueryDetails({ ...queryDetails, [name]: value });
+  };
+
+  // const handleSearch = () => {
+  //   console.log(queryDetails);
+  //   dispatch(search(queryDetails));
+  //   history.push("/results");
   // };
-  // console.log(query)
+
+  const handle = () => {
+    navigate("/hotels")
+ }
 
   return (
     <>
@@ -27,36 +100,30 @@ import Main from "./Search/Main";
           <HStack
             textAlign="center"
             justifyItems={"center"}
-            // border="1px solid gray"
-            // float={"left"}
+           border="1px solid gray"
+          // float={"left"}
           >
-          
-           <City placeholder="Where You want to go" data={India}/>
-
-            {/* <Input
+            <TextField
+              width="300px"
               name="city"
-              option="city"
               onChange={handleChange}
-              placeholder="Where You want to go"
-              textAlign={"center"}
-              width={"200px"}
-              height="50px"
-              fontSize={14}
-              fontWeight="500" />
-               */}
+              variant="outlined"
+              className={styles.Inp}
+              label="City"
+              select
+            >
+              {places.map((option) => (
+                <MenuItem key={option.value} value={option.value}>
+                  {option.label}
+                </MenuItem>
+              ))}
+            </TextField>
+
           </HStack>
 
-          {/* <div className={styles.cityy}>
-               {
-                  India.map((item)=>{
-                    return <div 
-                    key={item.id} value={item.option}> 
-                    {item.city}</div>
-                  })
-                } 
-           </div> */}
-
           <Input
+              name="from"
+             onChange={handleChange}
             placeholder="Select Date and Time"
             label="Check-in"
             width="150px"
@@ -66,9 +133,13 @@ import Main from "./Search/Main";
             color="#616161"
             variant="outlined"
             defaultValue="2022-11-14"
+            borderRadius={5}
+            // border={"black"}
           />
 
           <Input
+             name="to"
+            onChange={handleChange}
             placeholder="Select Date and Time"
             label="Check-out"
             width="150px"
@@ -77,6 +148,7 @@ import Main from "./Search/Main";
             fontSize={20}
             color="#616161"
             variant="outlined"
+            borderRadius={5}
             defaultValue="2022-11-16"
           />
 
@@ -86,13 +158,17 @@ import Main from "./Search/Main";
             justifyContent={"center"}
             height="50px"
           >
-            <HStack mt={"10px"} justifyContent="space-evenly">
+            <HStack mt={"10px"} justifyContent="space-evenly"
+            // borderRadius={5}
+            >
               <FaUserAlt justifyContent="center" />
               <Text
                 ml={"20px"}
                 fontSize={20}
                 fontWeight="450"
                 textAlign="center"
+                borderRadius={5}
+                name="travelers"
               >
                 Travelers
               </Text>
@@ -102,11 +178,15 @@ import Main from "./Search/Main";
 
         <div className={styles.check}>
           <Stack spacing={25} direction="row">
-            <Checkbox colorScheme="green">
+            <Checkbox colorScheme="green"
+              // onChange={(e) => setAddFlight(e.target.checked)}
+            >
               <input type={"checkbox"} />
               Add to Flight
             </Checkbox>
-            <Checkbox colorScheme="green">
+            <Checkbox colorScheme="green"
+                // onChange={(e) => setAddCar(e.target.checked)}
+            >
               <input type={"checkbox"} />
               Add to Car
             </Checkbox>
@@ -114,7 +194,7 @@ import Main from "./Search/Main";
         </div>
 
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <Button className={styles.but} variant="solid">
+          <Button  onClick={handle} className={styles.but} variant="solid">
             Search
           </Button>
         </div>

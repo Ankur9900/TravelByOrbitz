@@ -1,0 +1,66 @@
+.mainOTp {
+    /* min-width: 360px; */
+    width: 30%;
+    padding: 2rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    border-radius: 4px;
+    background: white;
+    margin: 50px auto 50px auto;
+    padding:100px;
+    border-radius: 10px
+;
+}
+
+.innerOTP {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding:3px; */
+    margin: 13%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.inpDiv {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 26px;
+   
+    margin: auto;
+    /* border: 1px solid black; */
+    justify-content: center;
+}
+
+.otpinp {
+    width: 3rem !important;
+    height: 3rem;
+    margin: 0 1rem;
+    border-radius: 4px;
+    font-size: 18px !important
+}
+
+.otpbtn {
+    background-color: rgb(168, 60, 60);
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1rem;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+
+}
+
+.btnOTPdiv {
+    display: flex;
+
+    justify-content: space-around
+}
+.otpcontainer{
+    background-color: #f5f5f5;
+}
+.inpDiv>input{
+    font-size: 16px;
+}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Signup.module.css';
 import { Link, useNavigate, } from 'react-router-dom';
-import { signup_attemp } from '../Redux/AuthReducer/action';
+import { signup_attemp } from '../Redux/Auth/action';
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
 import {eye} from 'react-icons-kit/feather/eye'
 import {Icon} from "react-icons-kit"

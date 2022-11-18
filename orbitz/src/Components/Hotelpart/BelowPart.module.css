@@ -1,0 +1,112 @@
+.reward {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+    /* font-family: Poppins; */
+    background-color: white;
+    border: 1px solid rgb(199, 196, 196);
+    /* padding-right: 20px; */
+    /* box-sizing: border-box; */
+    gap: 35px;
+    /* height: 320px; */
+    justify-content: space-between;
+}
+
+.reward>img {
+    /* height: 100%; */
+    width: 35%;
+    /* margin-right: 20px; */
+    object-fit: cover;
+}
+
+.reward_details>h2 {
+    width: 90%;
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+.pointers {
+    color: rgb(139, 126, 126);
+    /* font-weight: 300; */
+    text-align: start;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.pointers::marker {
+    font-size: 8px;
+    color: rgb(0, 0, 0);
+}
+
+.reward_details>h4 {
+    /* font-size: 17px; */
+    margin: 15px 0 10px 0;
+}
+
+.app_number {
+    font-size: 14px;
+    padding: 1%;
+    box-sizing: border-box;
+    width: 25%;
+    height: 47px;
+}
+
+.download_link {
+    display: flex;
+    gap: 10px;
+
+}
+
+.country_codes {
+    width: 35%;
+    height: 47px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.country_codes>option {
+    font-size: 14px;
+    /* font-weight: 300; */
+}
+
+
+.stays_saerch>button {
+    height: 47px;
+    background: #c83259;
+    /* padding: 10px 20px 10px 20px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.01rem;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.message {
+    font-size: 11px;
+    color: rgb(122, 107, 107);
+    width: 85%;
+    /* font-weight: 300; */
+}
+
+.qr_code {
+    width: 20%;
+    text-align: center;
+}
+
+.qr_code>img {
+    /* height: 150px; */
+    width: 80%;
+    margin-top: 20px;
+    object-fit: cover;
+    /* display: relative; */
+}
+
+.qr_code>p {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: -5px;
+}

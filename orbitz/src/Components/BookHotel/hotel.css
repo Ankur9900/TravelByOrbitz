@@ -1,0 +1,6 @@
+.hotelcard{
+    /* border: 1px solid black; */
+}
+.star{
+    display: flex;
+}

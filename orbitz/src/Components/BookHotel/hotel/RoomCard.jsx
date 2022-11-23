@@ -81,7 +81,7 @@ export default function RoomCard({img, name, price, deals, id}) {
                         <Deals>{deals}% off</Deals>
                         <Price>₹{5000}</Price>
                         <PerNight>per night</PerNight>
-                        <Total>`total ₹${5000+5000*0.13}`</Total>
+                        <Total>total ₹{5000+5000*0.13}</Total>
                         <Taxes> includes taxes & fees</Taxes>
                         <Span className={classes.blue}>More details<Icon2><ExpandMoreIcon className={classes.icon} /></Icon2></Span>
                     </Right>

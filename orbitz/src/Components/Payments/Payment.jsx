@@ -40,8 +40,9 @@ const PaymentPart = () => {
                             </select>
                             Year
                             <select name="" id="">
+                                <option value="">2022</option>
                                 <option value="">2023</option>
-                                <option value="">2024  </option>
+                                <option value="">2024 </option>
                                 <option value="">2025</option>
                                 <option value="">2026</option>
                                 <option value="">2027</option>
@@ -59,7 +60,7 @@ const PaymentPart = () => {
                 </div>
                 <div>
                     <h2>Payment deatail</h2>
-                    <p>Amount to be paid : $110</p>
+                    <p>Amount to be paid : $68</p>
                     <p>Discount : $0</p>
 
                 </div>

@@ -181,7 +181,7 @@ export const Stay = () => {
         </div>
         <div style={{ display: "flex", justifyContent: "center" }}>
          {/* <Link to="/hotels"> */}
-          <Button onClick={handle} className={styles.but} variant="solid">
+          <Button className={styles.but} variant="solid">
             Search
           </Button>
           {/* </Link> */}

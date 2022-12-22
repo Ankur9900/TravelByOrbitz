@@ -1,8 +1,6 @@
 import React from 'react'
 import styles from './Single.module.css';
-import { AiOutlineWifi } from "react-icons/ai"
-import { MdOutlineHotTub } from "react-icons/md"
-import { FaFan } from "react-icons/fa"
+
 import { Link } from 'react-router-dom';
 import styled from "styled-components"
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Countries from '../downtosearchbar/Countries'
-import Footer from '../Footer/Footer'
+import Footer from "../Footer"
 import styles from './BelowPart.module.css'
 
 const BelowPart = () => {

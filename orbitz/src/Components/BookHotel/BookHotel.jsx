@@ -5,7 +5,8 @@ import { Button, Box, Image } from "@chakra-ui/react";
 import HotelDetails from "./HotelDetails";
 import HotelParent from "./HotelParent";
 import { useParams } from "react-router-dom";
-import Footer from "../Footer/Footer";
+
+import Footer from "../Footer"
 import Navbar from "../Navbar/Navbar"
 import { HotelPageData } from "./hotel/HotelPageData";
 import styles from "./hotel.module.css"
@@ -206,9 +207,10 @@ const BookHotel = () => {
                     </div>
 			</div>
 
-			<Footer />
+           <Footer/>
 		</>
 	);
+	
 };
 
 export default BookHotel;

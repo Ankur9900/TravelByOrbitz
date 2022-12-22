@@ -1,7 +1,5 @@
 import React from 'react'
 import SingleHotel from '../singlehotel/SingleHote'
-import styles from './AllHotel.module.css';
-
 
 
 const AllHotels = ({data}) => {

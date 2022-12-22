@@ -21,5 +21,6 @@ export const SearchResults = () => {
           </div>
         )}
       </div>
-    );
+    )
+    
 }

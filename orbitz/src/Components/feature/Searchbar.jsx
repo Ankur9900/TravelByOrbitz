@@ -1,7 +1,6 @@
 import React  from "react";
 import styles from "./First.module.css";
-import { Box } from "@chakra-ui/react";
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+import { Tabs,  TabPanels,  TabPanel } from "@chakra-ui/react";
 import { Stay } from "./Stay";
 import {MdFlight} from "react-icons/md"
 import {AiFillHome} from "react-icons/ai"
@@ -14,7 +13,7 @@ import "./stay.css"
 export const Searchbar = () => {
   return (
     <div className={styles.home}>
-      <Box className={styles.containerSearchBox}>
+      <div className={styles.containerSearchBox}>
         <Tabs>
           <div className={styles.Flight} mt="50px"   style={{ justifycontent: "center" }}>
            <div className={styles.flat}> 
@@ -51,24 +50,9 @@ export const Searchbar = () => {
             <TabPanel>
               <Stay />
             </TabPanel>
-            <TabPanel>
-            <Stay />
-            </TabPanel>
-            <TabPanel>
-            <Stay />
-            </TabPanel>
-            <TabPanel>
-            <Stay />
-            </TabPanel>
-            <TabPanel>
-            <Stay />
-            </TabPanel>
-            <TabPanel>
-            <Stay />
-            </TabPanel>
           </TabPanels>
         </Tabs>
-      </Box>
+      </div>
     </div>
   );
 };

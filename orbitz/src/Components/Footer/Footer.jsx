@@ -3,6 +3,7 @@ import React from 'react'
 import { useStyles } from './Footermake';
 import styles from './Footer.module.css'
 import { Link } from 'react-router-dom';
+import TRABITZ from "../image/TRABITZ.png"
 
 const FootBox1 = [
     {
@@ -117,7 +118,7 @@ const Footer = () => {
           <box >
                 <Box className={styles.containerGrid} px={bootX} py={bootY}>
                 <Container className={classess.logo}>
-                    {/* <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="" /> */}
+                    <img src={"https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"} />
                 </Container>
             
                 <Container maxWidth="lg">

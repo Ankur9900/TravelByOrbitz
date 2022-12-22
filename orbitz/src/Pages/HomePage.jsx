@@ -3,8 +3,8 @@ import HomepageBody from '../Components/downtosearchbar/HomePageBody'
 import { Searchbar } from '../Components/feature/Searchbar'
 import Footer from '../Components/Footer/Footer'
 
-
 import Navbar from '../Components/Navbar/Navbar'
+import { Home } from '../Home/Home'
 
 
 
@@ -13,7 +13,8 @@ const HomePage = () => {
         <div style={{ display: "flex", flexDirection: "column",overflowX:"hidden" }}>
             <Navbar />
            <Searchbar/>
-            <HomepageBody />
+            {/* <HomepageBody /> */}
+             <Home/>
             <Footer />
         </div>
     )

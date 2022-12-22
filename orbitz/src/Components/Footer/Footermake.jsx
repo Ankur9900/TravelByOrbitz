@@ -3,8 +3,6 @@ export const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
         marginTop: 100,
-
-
     },
     Box: {
         margin: "2% 0",
@@ -15,12 +13,14 @@ export const useStyles = makeStyles((theme) => ({
  
     Box2: {
         margin: "0.5% 0",
-        fontSize: 13
+        fontSize: 13,
+        textAlign:"center"
     },
     Box3: {
-        margin: "1% 0",
         fontSize: 13,
-        paddingBottom:"2%"
+        paddingBottom:"2%",
+        margin: "1% 0",
+        textAlign:"center"
     },
     HeadBox: {
         fontWeight: "bolder",

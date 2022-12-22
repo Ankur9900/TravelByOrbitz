@@ -59,7 +59,6 @@
   }
 
   .textarea{
-    /* border: 1px solid red; */
     color: #FFFFFF;
     padding-top: 80px;
     font-weight: bold;
@@ -69,15 +68,13 @@
     
 
   .textarea >p{
-    /* color:#fff; */
     color: #FFFFFF;
-    /* color: #616161; */
     padding-top: 5px;
     padding-bottom: 5px;
   }
 
   .textarea >h1{
-    /* color: rgb(251, 251, 251); */
+
     color: #FFFFFF;
     text-shadow: 0px 1px 2px rgb(0 0 0 / 80%);
   }

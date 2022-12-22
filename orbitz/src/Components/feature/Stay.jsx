@@ -83,12 +83,7 @@ export const Stay = () => {
     setQueryDetails({ ...queryDetails, [name]: value });
   };
 
-  // const handleSearch = () => {
-  //   console.log(queryDetails);
-  //   dispatch(search(queryDetails));
-  //   history.push("/results");
-  // };
-
+ 
   const handle = () => {
     navigate("/hotels")
  }
@@ -200,5 +195,6 @@ export const Stay = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+
+}

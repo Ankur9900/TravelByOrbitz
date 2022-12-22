@@ -5,7 +5,8 @@ import { RiHotelFill } from 'react-icons/ri';
 import { RiCarFill, RiSuitcase2Fill, RiShipFill } from 'react-icons/ri';
 import { MdOutlineFlight } from 'react-icons/md';
 import { BsFillInboxesFill } from 'react-icons/bs';
-import TRABITZ from "../image/TRABITZ.png"
+// import TRABI from "../image/TRABI.png"
+import TRABI from "../image/TRABI.png"
 
 import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 
@@ -27,7 +28,7 @@ const Navbar = () => {
         <Link to="/">
           <img
             // src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2"
-            src={TRABITZ}
+            src={TRABI}
             alt="Brand logo"
             width="160px"
             heigth="45px"

@@ -5,8 +5,9 @@ import {
     legacy_createStore,
   } from 'redux';
   import thunk from "redux-thunk"
-  import { auth_reducer } from './Auth/reducer';
-import { hotelReducer } from './Hotel/reducer';
+
+ import { auth_reducer } from '../Redux/Auth/reducer'; 
+import { hotelReducer } from './../Redux/Hotel/reducer';
 
   
   const rootReducer = combineReducers({

@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import LoadingComp from "./Loading";
-// import { SearchCompact } from "./SearchCompact";
+
 import HotelsList from "../HotelsList/HotelsList";
 import styles from "./Home.module.css";
 

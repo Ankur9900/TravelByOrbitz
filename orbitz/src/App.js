@@ -1,4 +1,4 @@
-import './App.css';
+
 
 import { Searchbar } from './feature/Searchbar';
 import { Home } from './Home/Home';

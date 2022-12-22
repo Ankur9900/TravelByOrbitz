@@ -24,7 +24,7 @@ const img =
         {
             url: "https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_JetAndReset_imgB_900x600_20211101.jpg?impolicy=fcrop&w=600&h=400&q=medium",
             title: "Jet ans reset",
-            p: "Fly some where beachy and warm",
+            p: "Fly some where beachy",
             id:4,
         }
     ]
@@ -132,3 +132,4 @@ p{
     font-weight: normal;
     line-height: 1.3em;
 }`
+

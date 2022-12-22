@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import styles from "./home.module.css";
-
 import { MdModeEditOutline } from "react-icons/md";
 import { BiMerge } from "react-icons/bi";
 import { RiMoneyDollarBoxFill } from "react-icons/ri";
+import { Button, Grid, GridItem } from "@chakra-ui/react";
 
-import { Box, Button, Grid, GridItem, Image } from "@chakra-ui/react";
 
 export default function Options() {
+
   const Image = [
     {
       url: "https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_1199x399_20211117.jpg",
@@ -24,8 +24,17 @@ export default function Options() {
     },
   ];
 
-  const secimag =
-    "https://tpc.googlesyndication.com/simgad/10056509806482740393?";
+  const btn= {
+    backgroundColor: "#ebebeb",
+    borderRadius: "2px",
+    color: "#fff",
+    fontSize: "1rem",
+    lineHeight: "1.25rem",
+    minHeight: "2.45rem",
+    minWidth: "5.25rem",
+    textTransform: 'none',
+    marginTop:"20px"
+}
 
   return (
     <MainCont>
@@ -91,7 +100,7 @@ export default function Options() {
           <div className={styles.textarea}>
             <h1 className={styles.hed}>{Image[0].title}</h1>
             <p> {Image[0].dis}</p>
-            <Button fontSize={20} borderRadius={"2px"} border="none">{Image[0].btnname}</Button>
+            <Button variant="contained" className={btn} fontSize={20} borderRadius={"2px"} border="none">{Image[0].btnname}</Button>
           </div>
         </GridItem>
         <GridItem
@@ -104,19 +113,12 @@ export default function Options() {
           <div className={styles.textarea}>
             <h1 className={styles.hed}>{Image[1].title}</h1>
             <p> {Image[1].dis}</p>
-            <Button borderRadius={"2px"} fontSize={20} border="none">{Image[1].btnname}</Button>
+            <Button variant="contained" className={btn} borderRadius={"2px"} fontSize={20} border="none">{Image[1].btnname}</Button>
           </div>
         </GridItem>
+
       </Grid>
-     <Box gap="20px">
-     {/* <Box h={60} marginBottom="50px">
-        <Image src={secimag}  style={{ margin: "auto", paddingTop: "55px" }} />
-      </Box> */}
-      {/* <Box width={"100%"} margin="auto" marginBottom="50px" >
-        <Image src={"https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"} style={{ margin: "auto", paddingTop: "55px" }} />
-      </Box> */}
-     </Box>
-      
+
     </MainCont>
   );
 }

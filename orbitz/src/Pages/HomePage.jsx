@@ -4,6 +4,7 @@ import { Searchbar } from '../feature/Searchbar';
 import Footer from "../Components/Footer"
 import Navbar from '../Components/Navbar/Navbar';
 import  Travel from "./Travel"
+import { HelpBoat } from './HelpBoat';
 
 
 const HomePage = () => {
@@ -13,6 +14,7 @@ const HomePage = () => {
             <Searchbar/>
             <HomepageBody />
              <Travel/>
+             <HelpBoat/>
         </div>
     )
 }

@@ -1,6 +1,5 @@
-## ByMe.com
+## Orbitz
 
-ByMe is an E-Commerce US based web application which sells products related to Men and Women Clothing.
 
 ## [Deployed URL]()
 

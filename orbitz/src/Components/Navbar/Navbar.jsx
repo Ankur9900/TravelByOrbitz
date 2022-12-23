@@ -5,12 +5,14 @@ import { RiHotelFill } from 'react-icons/ri';
 import { RiCarFill, RiSuitcase2Fill, RiShipFill } from 'react-icons/ri';
 import { MdOutlineFlight } from 'react-icons/md';
 import { BsFillInboxesFill } from 'react-icons/bs';
-// import TRABI from "../image/TRABI.png"
-import TRABI from "../image/TRABI.png"
+import TRABITZ from "../image/TRABITZ.png"
 
 import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 
 import { useSelector } from 'react-redux';
+import Signin from './../../Pages/Signin';
+
+// import Signin from"../../
 
 
 
@@ -28,7 +30,7 @@ const Navbar = () => {
         <Link to="/">
           <img
             // src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2"
-            src={TRABI}
+            src={TRABITZ}
             alt="Brand logo"
             width="160px"
             heigth="45px"
@@ -99,8 +101,13 @@ const Navbar = () => {
           <NavLink to="#">List your property</NavLink>
           <NavLink to="#">Support</NavLink>
           <NavLink to="#">Trips</NavLink>
+          {/* <NavLink to="#">SignIn</NavLink> */}
         </nav>
+        <div className={styles.trbitz}> 
+          
+        </div>
         {/* <section ref={ref}> */}
+
         {!auth && <div
           className={styles.signin}
           onClick={() => {
@@ -116,7 +123,7 @@ const Navbar = () => {
                 Members can access discounts, points and special features
               </h4>
               <Link style={{ textDecoration: "none", color: 'white' }} to="signin" className={styles.signin_btn}>
-                <p >Sign in</p>
+                <p className={styles.signbtn} >Sign in</p>
               </Link>
               <h4>
                 <Link className={styles.signup_btn} to="/signup">
@@ -138,12 +145,16 @@ const Navbar = () => {
             </div>
           )}
         </div>}
-        {auth && <div>
+        {auth &&
+        
+         <div>
         Sign out
        
         </div>}
-        {/* </section> */}
+      
+      
       </div>
+
     </div>
 
   );

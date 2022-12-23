@@ -5,6 +5,8 @@ import { MdMonetizationOn, MdForum } from 'react-icons/md'
 import Countries from './Countries'
 import { IoIosArrowDown } from 'react-icons/io'
 
+
+
 const HomepageBody = () => {
     return (
         <div className={styles.mainBox}>

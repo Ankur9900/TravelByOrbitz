@@ -41,9 +41,6 @@ export const getHotelFailure = () => {
 }
 
 
-
-
-
 export const hotel_actions = {
   REQUEST: 'REQUEST',
   SUCCESS: 'SUCCESS',

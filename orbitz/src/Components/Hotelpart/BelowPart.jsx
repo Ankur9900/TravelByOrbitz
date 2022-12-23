@@ -1,6 +1,6 @@
 import React from 'react'
 import Countries from '../downtosearchbar/Countries'
-import Footer from "../Footer"
+// import Footer from "../Footer"
 import styles from './BelowPart.module.css'
 
 const BelowPart = () => {
@@ -47,7 +47,7 @@ const BelowPart = () => {
 
             </div>
             <div>
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </div>
     )

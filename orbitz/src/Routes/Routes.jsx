@@ -8,10 +8,8 @@ import Otp from "../Pages/Otp"
 import SignIn from "../Pages/Signin"
 import Thanks from "../Pages/Thankyou"
 import SignUp from "../Pages/Signup"
-
+// import Hotel from "../Hotel/Hotel"
 import BookHotel from '../Components/BookHotel/BookHotel'
-
-
 
 const AllRoutes = () => {
     return (
@@ -22,7 +20,6 @@ const AllRoutes = () => {
              <Route path='/hotels' element={
                     <Hotel/>
             } />
-
             <Route path="hotels/:id" element={<BookHotel/>} /> 
 
             <Route path='/payment' element={<PaymentPart/>} />

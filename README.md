@@ -1,5 +1,7 @@
 ## Trabitz
 
+ Trabitz is one of several online booking platforms that make it simple to book flights, hotels, rental cars, cruises, activities and travel packages. 
+ Knowing what to expect before using this tool may help you have more success booking a great travel deal.
 
 ## [Deployed URL]()
 

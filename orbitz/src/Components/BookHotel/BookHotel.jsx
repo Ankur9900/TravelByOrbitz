@@ -7,6 +7,7 @@ import HotelParent from "./HotelParent";
 import { useParams } from "react-router-dom";
 
 import Footer from "../Footer"
+
 import Navbar from "../Navbar/Navbar"
 import { HotelPageData } from "./hotel/HotelPageData";
 import styles from "./hotel.module.css"
@@ -162,8 +163,6 @@ const BookHotel = () => {
 				<br />
 				{/* <HotelParent checkAvailability={checkAvailability} /> */}
                 <HotelPageData />
-
-
 
 				
 				<div className={styles.areaDiv}>

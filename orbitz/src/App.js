@@ -1,8 +1,5 @@
 
 
-import { Searchbar } from './feature/Searchbar';
-import { Home } from './Home/Home';
-import Travel from './Home/Travel';
 import AllRoutes from './Routes/Routes';
 
 function App() {

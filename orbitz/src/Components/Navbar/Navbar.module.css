@@ -27,6 +27,7 @@
     width: 35%;
     gap: 5%;
     margin-right: 17%;
+    color:#fff;
 }
 
 .navbar_logo_div>a {
@@ -72,11 +73,12 @@
 
 .signin {
     position: relative;
+    color:#fff;
 }
 
 .signin_btn {
     height: 35px;
-
+    color:#fff;
     margin: auto;
 
     border-radius: 5px;
@@ -99,14 +101,16 @@
 }
 
 .signup_btn {
-    color: #00a4bb;
+    /* color: #00a4bb; */
+    color:#fff;
     text-decoration: none;
     text-align: center;
   
 }
 
 .signup_btn:hover {
-    color: black;
+    /* color: black; */
+    color:#fff;
 }
 
 .otherLinks>p>a {
@@ -120,6 +124,7 @@
 
 .more_travel_parent_div {
     position: relative;
+    
 }
 
 .more_travel_parent_div>div>div:hover,
@@ -164,6 +169,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    color:#fff;
 }
 .para1{
     margin-left: -252px;

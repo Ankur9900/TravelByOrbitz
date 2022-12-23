@@ -1,9 +1,9 @@
 import React from 'react'
-import HomepageBody from '../Components/downtosearchbar/HomePageBody'
-import { Searchbar } from '../feature/Searchbar'
-
-import Navbar from '../Components/Navbar/Navbar'
-
+import HomepageBody from '../Components/downtosearchbar/HomePageBody';
+import { Searchbar } from '../feature/Searchbar';
+import Footer from "../Components/Footer"
+import Navbar from '../Components/Navbar/Navbar';
+import  Travel from "./Travel"
 
 
 const HomePage = () => {
@@ -12,7 +12,7 @@ const HomePage = () => {
             <Navbar />
             <Searchbar/>
             <HomepageBody />
-        
+             <Travel/>
         </div>
     )
 }

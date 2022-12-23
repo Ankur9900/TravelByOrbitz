@@ -1,6 +1,5 @@
 import React from "react"
 
-
 import {
     Box,
     Container,
@@ -13,6 +12,7 @@ import {
     Center,
     Img
   } from '@chakra-ui/react';
+
   
   const Logo=()=> {
     return (

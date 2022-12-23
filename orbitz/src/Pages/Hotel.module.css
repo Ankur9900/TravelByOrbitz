@@ -6,7 +6,6 @@
    margin-bottom: 50px;
 }
 
-
 .upper_div1 {
     display: flex;
     width: 80%;
@@ -38,7 +37,7 @@
 }
 
 .upper_div1>div {
-    border: 1px solid rgb(186, 172, 172);
+    /* border: 1px solid rgb(186, 172, 172); */
     width: 30%;
     height: 60px;
     display: flex;
@@ -69,9 +68,10 @@
 
 .bodypart {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-around; */
+    justify-content:space-evenly;
     gap: 40px;
-    width: 90%;
+    width: 98%;
     margin: auto;
-    border:1px solid black;
+    border:1px solid rgb(217, 217, 217);
 }

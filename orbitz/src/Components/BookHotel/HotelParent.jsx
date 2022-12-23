@@ -1,7 +1,6 @@
 import React from "react";
 import HotelCard from "./HotelCard";
 import "./book.css";
-// import HotelCardFilter from "./HotelCardFilter";
 import { Heading } from "@chakra-ui/react";
 import axios from "axios"
 import { useEffect, useState } from "react";
@@ -22,7 +21,7 @@ const HotelParent = ({checkAvailability}) => {
 		 style={{width:"80%",margin:"auto",backgroundColor:"#f4f2f2"}}>
             <br />
             <Heading size="lg" h="14">Choose your room</Heading>
-			{/* <HotelCardFilter checkAvailability={checkAvailability} /> */}
+		
 			<br />
 			<div id="HotelParent">
 				{HotelsList.length && HotelsList.map((ele,indx)=>{

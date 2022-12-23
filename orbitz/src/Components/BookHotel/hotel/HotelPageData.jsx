@@ -14,6 +14,8 @@ export const HotelPageData = () => {
      dispatch(fetch_hotel_data())
    },[dispatch])
 
+  //  ============ resevre======   ===
+
   return (
     <>   
       <div className={styles.page}> 
@@ -22,28 +24,28 @@ export const HotelPageData = () => {
         <div className={styles.rooms}>
           <RoomCard
             img={
-              "https://images.trvl-media.com/hotels/2000000/1310000/1304400/1304393/f45dec6a.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+              "https://images.trvl-media.com/hotels/11000000/10220000/10210200/10210101/7841963d.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
             }
             name={"Delux Room"}
             price={hotel.price} deals={hotel.delas} id={1}
           />
           <RoomCard
             img={
-              "https://images.trvl-media.com/hotels/11000000/10220000/10210200/10210101/7841963d.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+              "https://images.trvl-media.com/hotels/1000000/900000/895300/895247/9024e4a1.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
             }
             name={"Premier Room"}
             price={hotel.price} deals={hotel.delas} id={2}
           />
           <RoomCard
             img={
-              "https://images.trvl-media.com/hotels/11000000/10220000/10210200/10210101/81732015.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+              "https://images.trvl-media.com/hotels/1000000/900000/895300/895247/8fb76b43.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
             }
             price={hotel.price} deals={hotel.delas} id={3}
             name={"Superior Suite"}
           />
           <RoomCard
             img={
-              "https://images.trvl-media.com/hotels/2000000/1310000/1304400/1304393/7fcbfc55.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+              "https://images.trvl-media.com/hotels/11000000/10220000/10210200/10210101/7841963d.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
             }
             name={"Super Delux Suite"}
             price={hotel.price} deals={hotel.delas} id={6}
@@ -57,7 +59,7 @@ export const HotelPageData = () => {
           />
           <RoomCard
             img={
-              "https://images.trvl-media.com/hotels/11000000/10220000/10210200/10210101/3fd60858.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+              "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/1000000/870000/860900/860842/b1780028_b.jpg"
             }
             name={"Corporate Suite"}
             price={hotel.price} deals={hotel.delas} id={5}

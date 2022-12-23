@@ -5,7 +5,6 @@ import { Button, Box, Image } from "@chakra-ui/react";
 import HotelDetails from "./HotelDetails";
 import HotelParent from "./HotelParent";
 import { useParams } from "react-router-dom";
-
 import Footer from "../Footer"
 import Navbar from "../Navbar/Navbar"
 import { HotelPageData } from "./hotel/HotelPageData";
@@ -14,6 +13,7 @@ import RoomIcon from '@material-ui/icons/Room';
 import RestaurantMenuIcon from '@material-ui/icons/RestaurantMenu';
 import DriveEtaIcon from '@material-ui/icons/DriveEta';
 import MapStaticHotel2 from "./MapStaticHotel2";
+import AmenitiesCrad from "../AmenitiesCard/AmenitiesCrad";
 
 const BookHotel = () => {
 	const [Hotel, setHotel] = useState([]);
@@ -162,16 +162,16 @@ const BookHotel = () => {
 				<br />
 				{/* <HotelParent checkAvailability={checkAvailability} /> */}
                 <HotelPageData />
-
-
-
+              
+			      <AmenitiesCrad/>
 				
 				<div className={styles.areaDiv}>
                         <div className={styles.subArea}>
                             <div>
                                 <h1>About this Area</h1>
                                 <h3>{"mumbai"}</h3>
-                        <div className={styles.aboutArea}><p>Taj Mahal Tower, Mumbai is located in Colaba, a neighborhood in Mumbai, and is in the city center and by the sea. Chhatrapati Shivaji Maharaj Museum and National Centre for the Performing Arts are cultural highlights, and some of the area's notable landmarks include Gateway of India and Flora Fountain. Looking to enjoy an event or a game? See what's going on at Wankhede Stadium, or consider JioGarden for a night out.</p></div>
+                        <div className={styles.aboutArea}>
+						<p style={{fontsize:"20px"}} >Taj Mahal Tower, Mumbai is located in Colaba, a neighborhood in Mumbai, and is in the city center and by the sea. Chhatrapati Shivaji Maharaj Museum and National Centre for the Performing Arts are cultural highlights, and some of the area's notable landmarks include Gateway of India and Flora Fountain. Looking to enjoy an event or a game? See what's going on at Wankhede Stadium, or consider JioGarden for a night out.</p></div>
                             </div>
                             <MapStaticHotel2/>
                         </div>
@@ -207,7 +207,7 @@ const BookHotel = () => {
                     </div>
 			</div>
 
-           <Footer/>
+           {/* <Footer/> */}
 		</>
 	);
 	

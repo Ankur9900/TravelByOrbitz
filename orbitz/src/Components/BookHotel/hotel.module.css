@@ -1,8 +1,12 @@
 .container {
-    background-color: #f5f5f5;
+    background-color: #fff;
     width: 100%;
     
   }
+  .aboutArea{
+    font-size: 15px;
+  }
+  
   .innerContainer {
     width: 100%;
     margin: auto;

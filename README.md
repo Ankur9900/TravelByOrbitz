@@ -50,5 +50,5 @@ https://spiffy-jalebi-2b49bc.netlify.app/
 A Group project build by 2 Developers, executed in 5 Days.
 
 ## Developers
-- **[Ankur singh chauhan](https://github.com/Ankur9900)**
+- **[Ankur Kumar chauhan](https://github.com/Ankur9900)**
 - **[Ashutosh Lakshakar](https://github.com/Ashutosh5333)**

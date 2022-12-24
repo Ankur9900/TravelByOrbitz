@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import styles from "./Hotel.module.css";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -14,15 +14,17 @@ import { fetch_hotel_data } from "../Redux/Hotel/action";
 import { useSelector } from "react-redux";
 
 const Hotel = () => {
+  const [page, SetPage] = useState(1)
   const { id } = useParams();
 
   const dispatch = useDispatch();
   const data = useSelector((state) => state.hotel.data);
-  console.log(data);
+  console.log("data",data);
 
   useEffect(() => {
-    dispatch(fetch_hotel_data(id));
-  }, [dispatch, id]);
+    dispatch(fetch_hotel_data(page,id));
+
+  }, [dispatch,id,page]);
 
   return (
     <div className={styles.Bigbox}>
@@ -99,10 +101,15 @@ const Hotel = () => {
           </div>
         </div>
       </div>
-
+      <div style={{textalign:"center", justifycontent:"center" }}> 
+     <button  onClick={()=>SetPage(prev=> prev-1)}>prev</button>
+     <button>{page}</button>
+     <button  onClick={()=>SetPage(prev=> prev+1) }>Next</button> 
+     </div>
       <BelowPart />
     </div>
   );
+  
 };
 
 export default Hotel;

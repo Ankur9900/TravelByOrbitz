@@ -24,10 +24,11 @@ const SignUp = () => {
     .then((userCredential)=>{
       console.log(userCredential)
       alert("Account created sucessfully")
+      navigate("/signin")
     }).catch((error)=>{
       console.log(error)
     })
-    Navigate("/signin")
+    // Navigate("/signin")
   };
 
  

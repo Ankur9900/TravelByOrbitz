@@ -1,37 +1,33 @@
 import React, { useState } from 'react';
 import styles from './Signup.module.css';
-import { Link, useNavigate, } from 'react-router-dom';
+import { Link, useNavigate, Navigate } from 'react-router-dom';
 import { signup_attemp } from '../Redux/Auth/action';
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
 import {eye} from 'react-icons-kit/feather/eye'
 import {Icon} from "react-icons-kit"
+import {auth} from "./firebase/fireconfig"
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 const SignUp = () => {
-  
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    password: "",
-  });
+  const [email,SetEmail]  =useState("")
+  const [Password,SetPassword]  =useState("")
+
   const navigate = useNavigate()
   const [icon , setIcon]=useState(eyeOff)
-
   const [pass, setPass]= useState(false);
 
 
-  const handleToggle=()=>{
-    if(pass===false){
-      setIcon(eye);
-      setPass(true)
-    }else{
-      setIcon(eyeOff);
-      setPass(false)
-    }
-  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    signup_attemp(form, navigate);
+    createUserWithEmailAndPassword(auth,email,Password)
+    .then((userCredential)=>{
+      console.log(userCredential)
+      alert("Account created sucessfully")
+    }).catch((error)=>{
+      console.log(error)
+    })
+    Navigate("/signin")
   };
 
  
@@ -55,36 +51,23 @@ const SignUp = () => {
           <h1>Create an account</h1>
           <input
             type="email"
-            name="email"
-            placeholder="Email address"
+            // name="email"
+            placeholder="Enter Email Address"
+            value={email}
             required
-            onChange={(e) =>
-              setForm({ ...form, [e.target.name]: e.target.value })
-            }
+            onChange={(e)=> SetEmail(e.target.value)}
           />
 
           <input
-            type="text"
-            name="name"
-            placeholder="Full name"
+            type={"password"}
+            // name="password"
+            placeholder="Enter Password"
+            value={Password}
             required
-            onChange={(e) =>
-              setForm({ ...form, [e.target.name]: e.target.value })
-            }
+            onChange={(e) => SetPassword(e.target.value)}
           />
-
-          <input
-            type={pass? "text":"password"}
-            name="password"
-            placeholder="Password"
-            required
-            onChange={(e) =>
-              setForm({ ...form, [e.target.name]: e.target.value }
-                )
-            }
-          />
-          <span className={styles.togg} onClick={handleToggle}><Icon icon ={icon} size={25}/></span>
-          <div>
+          <span className={styles.togg} ><Icon icon ={icon} size={25}/></span>
+          <div className={styles.keep}>
             <input className={styles.checkbox} type="checkbox" />
             Keep me signed in
           </div>
@@ -98,11 +81,11 @@ const SignUp = () => {
 
         <div className={styles.end_div}>
           <button
-            disabled={
-              form.name && form.email  && form.password
-                ? false
-                : true
-            }
+            // disabled={
+            //   form.name && form.email  && form.password
+            //     ? false
+            //     : true
+            // }
             className={styles.button}
             type={'submit'}
           >
@@ -124,9 +107,11 @@ const SignUp = () => {
             />
           </div>
         </div>
+
       </form>
     </div>
   );
+  
 };
 
 export default SignUp;

@@ -1,6 +1,7 @@
 
 
 import AllRoutes from './Routes/Routes';
+// import {Signin} from "./Pages/firebase/Signin"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
 
        <AllRoutes/>
+       {/* <Signin/> */}
         
     </div>
   )

@@ -15,12 +15,12 @@ const FilteredPage = ({ hotel }) => {
             </div>
 
             <div className='serachpro'>
-                <h3>Search by property name</h3>
+                <h3>Search by Property name</h3>
                 <input type="text" name="" id="" placeholder="e.g. Best Western" />
                 {/* <hr /> */}
             </div>
          
-            <h4>filter by</h4>
+            <h4>Filter by</h4>
 
             <div className='popular'>
                 <h5>Popular filters</h5>
@@ -83,7 +83,7 @@ const FilteredPage = ({ hotel }) => {
             </div>
 
             <div>
-                <h5>Patment type</h5>
+                <h5>Payment Type</h5>
                 <div>
                     <input type="checkbox" name="" id="" />
                     Fully refundable

@@ -124,10 +124,12 @@ const Navbar = () => {
               </h4>
               <Link style={{ textDecoration: "none", color: 'white' }} to="signin" className={styles.signin_btn}>
                 <p className={styles.signbtn} >Sign in</p>
+
               </Link>
+
               <h4>
                 <Link className={styles.signup_btn} to="/signup">
-                  Create a free accaunt
+                  Create a free account
                 </Link>
               </h4>
               <div className={styles.otherLinks}>
@@ -144,6 +146,7 @@ const Navbar = () => {
               </div>
             </div>
           )}
+
         </div>}
         {auth &&
         

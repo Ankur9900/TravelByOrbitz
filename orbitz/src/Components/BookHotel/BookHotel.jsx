@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./book.css";
-import { Tabs, TabList, Tab, useToast } from "@chakra-ui/react";
-import { Button, Box, Image } from "@chakra-ui/react";
+import { TabList } from '@mui/lab';
+import {Button ,Box, Image,Tabs, Tab } from "@material-ui/core"
 import HotelDetails from "./HotelDetails";
-import HotelParent from "./HotelParent";
 import { useParams } from "react-router-dom";
-import Footer from "../Footer"
+// import Footer from "../Footer"
+ import Footer from "../Footer/Footer"
 import Navbar from "../Navbar/Navbar"
 import { HotelPageData } from "./hotel/HotelPageData";
 import styles from "./hotel.module.css"
@@ -17,7 +17,7 @@ import AmenitiesCrad from "../AmenitiesCard/AmenitiesCrad";
 
 const BookHotel = () => {
 	const [Hotel, setHotel] = useState([]);
-	const toast = useToast();
+	// const toast = useToast();
 	const { id } = useParams();
 
 	useEffect(() => {
@@ -50,23 +50,23 @@ const BookHotel = () => {
 	const checkAvailability = () => {
 		const Luck = Math.random();
 		if (Luck > 0.37) {
-			toast({
-				title: "Rooms available.",
-				description: "Please check the list of the available hotels",
-				position: "top",
-				status: "success",
-				duration: 7000,
-				isClosable: true,
-			});
+			// toast({
+			// 	title: "Rooms available.",
+			// 	description: "Please check the list of the available hotels",
+			// 	position: "top",
+			// 	status: "success",
+			// 	duration: 7000,
+			// 	isClosable: true,
+			// });
 		} else {
-			toast({
-				title: "Sorry Rooms not available currently",
-				description: "We will update you as soon as the queue is cleared",
-				position: "top",
-				status: "error",
-				duration: 7000,
-				isClosable: true,
-			});
+			// toast({
+			// 	title: "Sorry Rooms not available currently",
+			// 	description: "We will update you as soon as the queue is cleared",
+			// 	position: "top",
+			// 	status: "error",
+			// 	duration: 7000,
+			// 	isClosable: true,
+			// });
 		}
 	};
 
@@ -207,7 +207,7 @@ const BookHotel = () => {
                     </div>
 			</div>
 
-           {/* <Footer/> */}
+           <Footer/>
 		</>
 	);
 	

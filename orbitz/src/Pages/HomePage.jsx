@@ -1,7 +1,9 @@
 import React from 'react'
 import HomepageBody from '../Components/downtosearchbar/HomePageBody';
 import { Searchbar } from '../feature/Searchbar';
-import Footer from "../Components/Footer"
+// import Footer from "../Components/Footer"
+import Footer from "../Components/Footer/Footer"
+
 import Navbar from '../Components/Navbar/Navbar';
 import  Travel from "./Travel"
 import { HelpBoat } from './HelpBoat';
@@ -15,6 +17,7 @@ const HomePage = () => {
             <HomepageBody />
              <Travel/>
              <HelpBoat/>
+             <Footer/>
         </div>
     )
 }

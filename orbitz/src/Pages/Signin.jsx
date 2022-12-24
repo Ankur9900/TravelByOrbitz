@@ -1,16 +1,21 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link, Navigate } from 'react-router-dom'
+import { Link, Navigate ,useNavigate } from 'react-router-dom'
 import { signin_attemp } from '../Redux/Auth/action'
 import styles from './Signin.module.css'
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
 import {eye} from 'react-icons-kit/feather/eye'
 import {Icon} from "react-icons-kit"
-
+import {FcGoogle} from "react-icons/fc";
+import {auth} from "./firebase/fireconfig"
+import { signInWithEmailAndPassword } from 'firebase/auth'
 
 const SignIn = () => {
-  const auth = useSelector(state => state.Auth.auth)
+  // const auth = useSelector(state => state.Auth.auth);
 
+ const [email, Setemail] = useState("")
+ const [password, Setpassword] = useState("")
+  const navigate = useNavigate()
 
   const dispatch = useDispatch()
   const initialState = { email: '', password: "" }
@@ -29,18 +34,29 @@ const SignIn = () => {
       setPass(false)
     }
   }
-
-
   const handleSubmit = (e) => {
     e.preventDefault()
-    dispatch(signin_attemp(loginData))
+    signInWithEmailAndPassword(auth,email,password)
+    .then((userCredential) => {
+      console.log(userCredential);
+      alert("Signed sucessfully")
+      navigate("/")
+    }).catch((error) => {
+      console.log(error);
+    })
+    
+    // navigate("/")
   }
 
-  if (auth) {
-    return <Navigate to='/' />
-  }
+  
+  // if (auth) {
+  //   return <Navigate to='/' />
+  // }
+
   return (
+    
     <div className={styles.signin_container}>
+
       <div className={styles.logo_back}>
         <Link to="/">
           <img
@@ -50,15 +66,22 @@ const SignIn = () => {
           
           />
         </Link>
-        <hr />
+        <hr/>
       </div>
       <form onSubmit={handleSubmit}>
         <div className={styles.signin_div}>
           <h1>Sign in</h1>
-          <input type="email" name="email" placeholder='Email address' onChange={e => { setLoginData({ ...loginData, [e.target.name]: e.target.value }) }} />
-          <input type={pass? "text":"password"} name="password" placeholder="Password" onChange={e => { setLoginData({ ...loginData, [e.target.name]: e.target.value }) }} />
-          <span className={styles.togg} onClick={handleToggle}><Icon icon ={icon} size={25}/></span>
-          <div>
+          {/* <input type="email" name="email" placeholder='Email address' onChange={e => { setLoginData({ ...loginData, [e.target.name]: e.target.value }) }} /> */}
+          {/* <input type={pass? "text":"password"} name="password" placeholder="Password" onChange={e => { setLoginData({ ...loginData, [e.target.name]: e.target.value }) }} /> */}
+          <input type="email" placeholder='email'
+          value={email} onChange={(e)=> Setemail(e.target.value) }
+           />
+          <input type="password" placeholder='password'
+          value={password}
+           onChange={(e)=> Setpassword(e.target.value) }
+           />
+          <span className={styles.togg} onClick={handleToggle}><Icon border="1px solid red" icon ={icon} size={25}/></span>
+          <div className={styles.sign}>
             <input
               className={styles.checkbox}
               type="checkbox"
@@ -73,13 +96,15 @@ const SignIn = () => {
           </p>
         </div>
         <div className={styles.end_div}>
-          <button disabled={
-            loginData.email && loginData.password
-              ? false
-              : true
-          } className={styles.button} type="submit">Continue</button>
-
-          <Link to='/forget'>Forgot Password</Link>
+          <button
+          //  disabled={
+          //   loginData.email && loginData.password
+          //     ? false
+          //     : true
+          // }
+           className={styles.button} type="submit">Continue</button>
+           {/* <button type="submit">Submit</button> */}
+          {/* <Link to='/forget'>Forgot Password</Link> */}
           <p >
             Don't have an account? <Link to='/signup'>Create one</Link>
           </p>
@@ -95,6 +120,10 @@ const SignIn = () => {
               src="https://a.travel-assets.com/egds/marks/facebook.svg"
               alt=""
             />
+             
+              
+             <FcGoogle/>
+
           </div>
         </div>
       </form>

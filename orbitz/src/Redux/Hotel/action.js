@@ -61,12 +61,11 @@ export const hotel_data_failure = () => ({
 });
 
 
-export const fetch_hotel_data = () => (dispatch) => {
+export const fetch_hotel_data = (page=1) => (dispatch) => {
   dispatch(hotel_data_request());
   axios
-    .get(`https://orbitz-mock-api.onrender.com/hotels`)
+    .get(`https://orbitz-mock-api.onrender.com/hotels?&_page=${page}&_limit=11`)
     .then((res) => {
-        // console.log(res.data)
       dispatch(hotel_data_success(res.data));
     })
     .catch((err) => {

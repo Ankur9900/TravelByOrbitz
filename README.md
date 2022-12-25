@@ -6,7 +6,7 @@
 ## [Deployed URL](https://spiffy-jalebi-2b49bc.netlify.app/)
 
 https://spiffy-jalebi-2b49bc.netlify.app/
-## Searchbar 
+## Homepage
 ![WhatsApp Image 2022-12-23 at 3 28 15 PM](https://user-images.githubusercontent.com/101393850/209316781-020d3618-9e38-4653-b2b5-579fa0dd7c6c.jpeg)
 
 ## Features 
@@ -33,7 +33,7 @@ https://spiffy-jalebi-2b49bc.netlify.app/
 ![WhatsApp Image 2022-12-23 at 3 28 15 PM (1)](https://user-images.githubusercontent.com/101393850/209317373-60a24cb6-9cad-4121-9a6c-9988eb4e5a5d.jpeg)
 
 ## Safety Notice
-!![WhatsApp Image 2022-12-23 at 3 28 18 PM (1)](https://user-images.githubusercontent.com/101393850/209317360-2456b3c2-b213-438c-96a3-692b289cf8ee.jpeg)
+![WhatsApp Image 2022-12-23 at 3 28 18 PM (1)](https://user-images.githubusercontent.com/101393850/209317360-2456b3c2-b213-438c-96a3-692b289cf8ee.jpeg)
 
 
 

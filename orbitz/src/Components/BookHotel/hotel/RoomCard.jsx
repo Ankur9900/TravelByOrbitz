@@ -1,3 +1,4 @@
+
 import React, {useState} from 'react'
 import styled from 'styled-components'
 import { makeStyles } from '@material-ui/core/styles';
@@ -85,9 +86,9 @@ export default function RoomCard({img, name, price, deals, id}) {
                         <Span className={classes.blue}>More details<Icon2><ExpandMoreIcon className={classes.icon} /></Icon2></Span>
                     </Right>
                     <Left>
-                        {/* <BtnCont><Button className={classes.btn} variant="contained" color="secondary">Reserve</Button></BtnCont> */}
+
                         <BtnCont>
-                        {/* <PaymentModal className={classes.btn}/> */}
+                        
                          <Link to="/payment">
                          <Buttonre>Reserve</Buttonre>
                          </Link>

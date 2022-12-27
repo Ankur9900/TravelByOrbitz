@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom"
 
 
 const HotelCard = ({Hotel}) => {
-	// console.log(Hotel)
+	
 	const navigate=useNavigate()
 
 	const ToPayment=()=>{

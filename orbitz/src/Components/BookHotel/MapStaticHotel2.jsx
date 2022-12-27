@@ -1,14 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-// import { useHistory } from 'react-router'
-
 
 export default function MapStaticHotel2() {
 
-    // const history = useHistory()
     const handleMap = () => {
         alert("map")
-        // history.push("/map")
+       
     }
     
     return (
@@ -19,7 +16,7 @@ export default function MapStaticHotel2() {
             <View onClick={handleMap}>
                 <h4>View in map</h4>
             </View>
-            {/* <Hr></Hr> */}
+           
         </Cont>
     )
 }

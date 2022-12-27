@@ -1,21 +1,15 @@
 import React, { useState } from "react";
 import { Button, Checkbox, HStack, Input, Stack, Text, Box } from "@chakra-ui/react";
 import "./stay.css";
-import { Flex } from "@chakra-ui/react";
+
 import styles from "./style.module.css";
 import { FaUserAlt } from "react-icons/fa";
-import { makeStyles, TextField, MenuItem } from "@mui/material"
-import { useLocation } from "react-router-dom";
-import useHistory  from 'use-history'
-import {useDispatch} from "react-redux"
-// import {search} from "../Redux/Queries/actions"
+import { TextField, MenuItem } from "@mui/material"
+
 import { useNavigate } from "react-router-dom";
 
 export const Stay = () => {
-  const [addFlight, setAddFlight] = useState(false);
-  const [addCar, setAddCar] = useState(false);
-  // const dispatch = useDispatch();
-  // let history = useHistory();
+
   const navigate = useNavigate()
   const [queryDetails, setQueryDetails] = useState({});
 
@@ -45,39 +39,7 @@ export const Stay = () => {
   ];
 
 
-  const  date= {
-      marginTop: "10px",
-      marginRight: "10px",
-      fill: "#616161",
-    }
-    
-  const btn1 = {
-    marginTop: "10px",
-    width: "170px",
-    // height: "49px",
-    backgroundColor: "rgb(200,50,89)",
-    borderRadius: "1px",
-    textTransform: "none",
-    fontSize: "18px",
-    // color: "white",
-    cursor: "pointer",
-    border: "0px",
-  }
-  const btn2 = {
-    width: "180px",
-    height: "49px",
-    backgroundColor: "rgb(200,50,89)",
-    borderRadius: "3px",
-    textTransform: "none",
-    fontSize: "18px",
-    position: "absolute",
-    bottom: 20,
-    left: 510,
-    color: "white",
-    cursor: "pointer",
-    border: "0px",
-  }
-
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setQueryDetails({ ...queryDetails, [name]: value });
@@ -129,7 +91,7 @@ export const Stay = () => {
             variant="outlined"
             defaultValue="2022-11-14"
             borderRadius={5}
-            // border={"black"}
+           
           />
 
           <Input
@@ -154,7 +116,7 @@ export const Stay = () => {
             height="50px"
           >
             <HStack mt={"10px"} justifyContent="space-evenly"
-            // borderRadius={5}
+            
             >
               <FaUserAlt justifyContent="center" />
               <Text
@@ -174,13 +136,13 @@ export const Stay = () => {
         <div className={styles.check}>
           <Stack spacing={25} direction="row">
             <Checkbox colorScheme="green"
-              // onChange={(e) => setAddFlight(e.target.checked)}
+           
             >
               <input type={"checkbox"} />
               Add to Flight
             </Checkbox>
             <Checkbox colorScheme="green"
-                // onChange={(e) => setAddCar(e.target.checked)}
+            
             >
               <input type={"checkbox"} />
               Add to Car

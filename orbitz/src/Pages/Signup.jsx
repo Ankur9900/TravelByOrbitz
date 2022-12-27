@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Signup.module.css';
-import { Link, useNavigate, Navigate } from 'react-router-dom';
-import { signup_attemp } from '../Redux/Auth/action';
+import { Link, useNavigate } from 'react-router-dom';
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
-import {eye} from 'react-icons-kit/feather/eye'
 import {Icon} from "react-icons-kit"
 import {auth} from "./firebase/fireconfig"
 import { createUserWithEmailAndPassword } from 'firebase/auth';
@@ -14,9 +12,6 @@ const SignUp = () => {
 
   const navigate = useNavigate()
   const [icon , setIcon]=useState(eyeOff)
-  const [pass, setPass]= useState(false);
-
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,7 +23,6 @@ const SignUp = () => {
     }).catch((error)=>{
       console.log(error)
     })
-    // Navigate("/signin")
   };
 
  
@@ -52,7 +46,6 @@ const SignUp = () => {
           <h1>Create an account</h1>
           <input
             type="email"
-            // name="email"
             placeholder="Enter Email Address"
             value={email}
             required
@@ -61,7 +54,6 @@ const SignUp = () => {
 
           <input
             type={"password"}
-            // name="password"
             placeholder="Enter Password"
             value={Password}
             required
@@ -82,11 +74,6 @@ const SignUp = () => {
 
         <div className={styles.end_div}>
           <button
-            // disabled={
-            //   form.name && form.email  && form.password
-            //     ? false
-            //     : true
-            // }
             className={styles.button}
             type={'submit'}
           >

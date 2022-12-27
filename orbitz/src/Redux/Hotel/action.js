@@ -61,10 +61,36 @@ export const hotel_data_failure = () => ({
 });
 
 
-export const fetch_hotel_data = (page=1) => (dispatch) => {
+// export const fetch_hotel_data = (args={})=> (queryParams) => (dispatch) => {
+//         const {sortBy="asc" , page=1} = args
+//   dispatch(hotel_data_request());
+//   axios
+//     .get(`https://orbitz-mock-api.onrender.com/hotels?_sort=price&_order=${sortBy}&_page=${page}&_limit=11`,queryParams)
+//     .then((res) => {
+//       dispatch(hotel_data_success(res.data));
+//     })
+//     .catch((err) => {
+//       dispatch(hotel_data_failure());
+//     });
+// };
+
+
+// export const fetch_hotel_data = (queryParams) => (page=1) => (dispatch) => {
+//   dispatch(hotel_data_request());
+//   axios
+//     .get(`https://orbitz-mock-api.onrender.com/hotels?_page=${page}&_limit=11`,queryParams)
+//     .then((res) => {
+//       dispatch(hotel_data_success(res.data));
+//     })
+//     .catch((err) => {
+//       dispatch(hotel_data_failure());
+//     });
+// };
+
+export const fetch_hotel_data = (queryParams) => (dispatch) => {
   dispatch(hotel_data_request());
   axios
-    .get(`https://orbitz-mock-api.onrender.com/hotels?&_page=${page}&_limit=11`)
+    .get(`https://orbitz-mock-api.onrender.com/hotels`,queryParams)
     .then((res) => {
       dispatch(hotel_data_success(res.data));
     })
@@ -72,6 +98,9 @@ export const fetch_hotel_data = (page=1) => (dispatch) => {
       dispatch(hotel_data_failure());
     });
 };
+
+
+
 
 export const gethotel = (payload)=> (dispatch) => {
     dispatch(getHotelRequest())

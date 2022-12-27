@@ -1,8 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './FilterPage.css';
+import {useSearchParams} from "react-router-dom"
 
 const FilteredPage = ({ hotel }) => {
+    const [searchParams,setSearchParams]= useSearchParams();
+    const [categories,setCategory]= useState(searchParams.getAll("city") || [])
+    const [sortBy,SetSortBy]= useState(searchParams.getAll("price") || [])
+       
+    const handleFilter = (e) => {
+      const option = e.target.value
+      let newCategory = [...categories];
     
+      if(newCategory.includes(option)){
+        newCategory.splice(newCategory.indexOf(option),1)
+      } else {
+        newCategory.push(option)
+      }
+      setCategory(newCategory);
+    }
+    console.log(categories)
+    
+  
+     useEffect(() => {
+       const params = {};
+       categories && (params.city=categories);
+       sortBy && (params.sortBy=sortBy);
+       setSearchParams(params)
+     },[categories,setSearchParams,sortBy]);
+
+     const handleSortBy = (e) =>{
+         SetSortBy(e.target.value)
+     }
+    
+
     return (
         <div className='filter'>
 
@@ -23,26 +53,37 @@ const FilteredPage = ({ hotel }) => {
             <h4>Filter by</h4>
 
             <div className='popular'>
-                <h5>Popular filters</h5>
+                <h5>Filter By City </h5>
                 <div>
-                    <input type="checkbox" name="" id="" />
-                    Free airport shuttle
+                    <input type="checkbox" value={"Dehli"}
+                      onChange={handleFilter}
+                     defaultValue={categories.includes("Dehli")}
+                     />
+                    Delhi
                 </div>
                 <div>
-                    <input type="checkbox" name="" id="" />
-                    Chandni Chowk
+                    <input type="checkbox"  value={"Lucknow"}
+                      onChange={handleFilter}
+                     defaultValue={categories.includes("Lucknow")} />
+                    Lucknow
                 </div>
                 <div>
-                    <input type="checkbox" name="" id="" />
-                    Gym
+                    <input type="checkbox" value={"Bangalore"}
+                      onChange={handleFilter}
+                     defaultValue={categories.includes("Bangalore")}/>
+                    Bangalore
                 </div>
                 <div>
-                    <input type="checkbox" name="" id="" />
-                    Condominium resort
+                    <input type="checkbox" value={"Hyderabad"}
+                      onChange={handleFilter}
+                     defaultValue={categories.includes("Hyderabad")}/>
+                    Hyderabad
                 </div>
                 <div>
-                    <input type="checkbox" name="" id="" />
-                    Free WiFi
+                    <input type="checkbox"  value={"Pune"}
+                      onChange={handleFilter}
+                     defaultValue={categories.includes("Pune")} />
+                    Pune
                 </div>
             </div>
 
@@ -51,6 +92,26 @@ const FilteredPage = ({ hotel }) => {
                 <p>$0</p>
                 <p>$300+</p>
                 <input type="range" name="" id="" />
+            </div>
+
+            <div className='guest' onChange={handleSortBy}>
+                <h5>Guest rating</h5>
+                <div>
+                    <input type="radio"
+                      value={"asc"}
+                      name="sortBy"
+                      defaultChecked={sortBy==="asc"}
+                     />
+                Low To High
+                </div>
+                <div>
+                    <input type="radio"  value={"desc"}
+                      name="sortBy"
+                      defaultChecked={sortBy==="desc"} />
+                    {/* Low To High */}
+                    High To Low
+                </div>
+                
             </div>
 
             <div className='guest'>

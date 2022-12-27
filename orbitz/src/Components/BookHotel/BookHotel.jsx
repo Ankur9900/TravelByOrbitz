@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./book.css";
-import { TabList } from '@mui/lab';
-import {Button ,Box, Image,Tabs, Tab } from "@material-ui/core"
+// import { TabList } from '@mui/lab';
+// import {TabList} from "@chakra-ui/react";
+import { Tabs,Button, TabList, Tab, useToast } from "@chakra-ui/react";
+
+// import {Button ,Tabs, Tab } from "@material-ui/core"
 import HotelDetails from "./HotelDetails";
 import { useParams } from "react-router-dom";
-// import Footer from "../Footer"
  import Footer from "../Footer/Footer"
 import Navbar from "../Navbar/Navbar"
 import { HotelPageData } from "./hotel/HotelPageData";
@@ -47,28 +49,6 @@ const BookHotel = () => {
 		window.scrollTo({ top: 10000, behavior: "smooth" });
 	};
 
-	const checkAvailability = () => {
-		const Luck = Math.random();
-		if (Luck > 0.37) {
-			// toast({
-			// 	title: "Rooms available.",
-			// 	description: "Please check the list of the available hotels",
-			// 	position: "top",
-			// 	status: "success",
-			// 	duration: 7000,
-			// 	isClosable: true,
-			// });
-		} else {
-			// toast({
-			// 	title: "Sorry Rooms not available currently",
-			// 	description: "We will update you as soon as the queue is cleared",
-			// 	position: "top",
-			// 	status: "error",
-			// 	duration: 7000,
-			// 	isClosable: true,
-			// });
-		}
-	};
 
 	return (
 		<>
@@ -96,9 +76,9 @@ const BookHotel = () => {
 					</div>
 				</div>
 				<Tabs width="80%" margin="auto" padding="5px 0px">
-					<TabList id="Tabs" justifyContent="space-between">
+					<TabList id="Tabs" justifycontent="space-between">
 						<div>
-							<Tab className="productTabs" fontWeight="600" color="#6b646b">
+							<Tab className="productTabs" fontweight="600" color="#6b646b">
 								Summary
 							</Tab>
 							<Tab
@@ -160,7 +140,7 @@ const BookHotel = () => {
 				</Tabs>
 				<HotelDetails Hotel={Hotel} />
 				<br />
-				{/* <HotelParent checkAvailability={checkAvailability} /> */}
+			
                 <HotelPageData />
               
 			      <AmenitiesCrad/>

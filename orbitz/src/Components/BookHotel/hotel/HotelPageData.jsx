@@ -8,7 +8,7 @@ import { fetch_hotel_data, gethotel } from "../../../Redux/Hotel/action";
 export const HotelPageData = () => {
    const dispatch = useDispatch()
    const hotel = useSelector((state) => state.hotel.data)
-   console.log(hotel.price)
+  //  console.log(hotel.price)
 
    useEffect(()=>{
      dispatch(fetch_hotel_data())

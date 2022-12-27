@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Payment.module.css'
 
-import Footer from "../Footer"
+// import Footer from "../Footer"
 import { useNavigate } from 'react-router-dom';
 
 const PaymentPart = () => {
@@ -66,7 +66,7 @@ const PaymentPart = () => {
                 </div>
                
             </div>
-            <Footer/>
+            {/* <Footer/> */}
 
         </div>
     )

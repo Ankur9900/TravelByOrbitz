@@ -246,58 +246,7 @@
       "id": 7
     }
   ],
-  "users": [
-    {
-      "id": 1,
-      "firstname": "Deependra",
-      "email": "user@gmail.com.com",
-      "password": "123123123",
-      "showPassword": false,
-      "checked": true
-    },
-    {
-      "firstname": "Pawan",
-      "email": "pawanpfgfgatidar41@gmail.com",
-      "password": "123456789",
-      "showPassword": false,
-      "id": 2
-    },
-    {
-      "firstname": "Monu",
-      "email": "pawanpatidar21@gmail.com",
-      "password": "123456789",
-      "showPassword": true,
-      "id": 3
-    },
-    {
-      "firstname": "Rahul",
-      "email": "rahulpatidar41@gmail.com",
-      "password": "123456789",
-      "showPassword": true,
-      "id": 4
-    },
-    {
-      "firstname": "Rahul",
-      "email": "rahulpatidar21@gmail.com",
-      "password": "123456789",
-      "showPassword": true,
-      "id": 5
-    },
-    {
-      "firstname": "Kushal",
-      "email": "patidarkushal70@gmail.com",
-      "password": "12345678",
-      "showPassword": true,
-      "id": 6
-    },
-    {
-      "firstname": "Deependra",
-      "email": "916deepaknegi@gmail.com",
-      "password": "123123123",
-      "showPassword": false,
-      "id": 7
-    }
-  ],
+
   "login": [
     {
       "id": 1,

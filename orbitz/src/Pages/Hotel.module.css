@@ -6,6 +6,25 @@
    margin-bottom: 50px;
 }
 
+.ascending{
+ text-align: center;
+ justify-content: center;
+ justify-items: center;
+ margin: auto;
+ margin-bottom: 20px;
+
+}
+
+.decending{
+     padding:15px;
+     border-radius: 10px;
+     background-color: rgb(190, 17, 17);
+     color: rgb(243, 243, 243);
+      font-weight: 500;
+      border: none;
+}
+
+
 .upper_div1 {
     display: flex;
     width: 80%;
@@ -33,6 +52,14 @@
     border: none;
     font-size: 18px;
     width: 100%;
+
+}
+.pagniation{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    padding: 10px 15px;
 
 }
 

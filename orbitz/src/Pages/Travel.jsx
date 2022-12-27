@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+// import {Button } from "@mui/material";
 import {Button} from "@chakra-ui/react"
     
 export default function Travel() {
@@ -80,16 +81,4 @@ const ParaIn = styled.div`
 `
 const Para = styled.div`
     padding: 0.75rem 1.5rem;
-`
-const Card2Cont = styled.div`
-    width: 100%;
-    padding: 1.5rem 0rem;
-    display: flex;
-    justify-content: space-between;
-`
-const Card2 = styled.div`
-    padding: 1.5rem;
-    img{
-        width: 100%;
-    }
 `

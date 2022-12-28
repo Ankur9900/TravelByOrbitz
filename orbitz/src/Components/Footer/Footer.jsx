@@ -1,4 +1,4 @@
-import { Box, Container, Grid,Img } from '@material-ui/core'
+import { Box, Container, Grid } from '@material-ui/core'
 import React from 'react'
 import { useStyles } from './Footermake';
 import styles from './Footer.module.css'
@@ -171,11 +171,11 @@ const Footer = () => {
                 <hr/>
                 <Container textAlign="center"  justifycontent="center">
                 <Box  >
-              <img marginLeft={"450px"} src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png" />
+              <img marginLeft={"450px"} src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png" alt="" />
                </Box>
                 <br/>
             <Box  textAlign="center"  borderTop={1}>
-                <Box className={classess.Box2}>© 2021 Orbitz, LLC, an Expedia Group Company. All rights reserved.</Box>
+                <Box className={classess.Box2}> © 2021 Orbitz, LLC, an Expedia Group Company. All rights reserved.</Box>
                 <Box className={classess.Box3}> Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered trademarks of Orbitz, LLC. CST# 2083930-50.</Box>
             </Box>
                 </Container>

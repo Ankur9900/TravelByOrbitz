@@ -4,17 +4,20 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./store/Store";
+import AuthContextProvider from "./Pages/context/AppContext";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-        <Provider store={store}>
         <BrowserRouter>
+        <AuthContextProvider>
+        <Provider store={store}>
           <App />
-        </BrowserRouter>
          </Provider>
+        </AuthContextProvider>
+        </BrowserRouter>
       
   </React.StrictMode>
 

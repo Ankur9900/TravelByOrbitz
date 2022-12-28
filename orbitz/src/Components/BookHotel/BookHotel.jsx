@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./book.css";
-// import { TabList } from '@mui/lab';
-// import {TabList} from "@chakra-ui/react";
-import { Tabs,Button, TabList, Tab, useToast } from "@chakra-ui/react";
 
-// import {Button ,Tabs, Tab } from "@material-ui/core"
+import { Tabs,Button, TabList, Tab } from "@chakra-ui/react";
+
 import HotelDetails from "./HotelDetails";
 import { useParams } from "react-router-dom";
  import Footer from "../Footer/Footer"
@@ -19,7 +17,6 @@ import AmenitiesCrad from "../AmenitiesCard/AmenitiesCrad";
 
 const BookHotel = () => {
 	const [Hotel, setHotel] = useState([]);
-	// const toast = useToast();
 	const { id } = useParams();
 
 	useEffect(() => {
@@ -168,7 +165,7 @@ const BookHotel = () => {
                                     <p>Mantralaya - 13 min walk</p>
                                     <p>Bombay Castle - 17 min walk</p>
                                 </div>
-                                <div>
+                                {/* <div>
                                     <div className={styles.flexDisp}><RestaurantMenuIcon/><h3>Restaurants</h3></div>
                                     <p>Shamiana – Pool-view restaurant. Open 24 hours.</p>
                                     <p>Aquarius – Poolside restaurant. Serves light fare.</p>
@@ -181,7 +178,7 @@ const BookHotel = () => {
                                     <p>Chhatrapati Shivaji Maharaj Terminus Railway Station - 3 min drive</p>
                                     <p>Grant Road Station - 7 min drive</p>
                                     <p>Chhatrapati Shivaji International Airport (BOM) - 55 min drive</p>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

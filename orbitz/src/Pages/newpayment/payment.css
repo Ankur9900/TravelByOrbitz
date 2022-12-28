@@ -1,0 +1,66 @@
+.form{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.cancel{
+    padding: 10px 15px;
+    background-color: rgb(199, 26, 55);
+    border-radius: 10px;
+    border: none;
+}
+.text{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+}
+
+.Send{
+    padding: 10px 15px;
+    background-color: rgb(16, 167, 161);
+    border-radius: 10px;
+    border: none;
+}
+.userdetail{
+     margin: auto;
+    text-align: center;
+     justify-content: center;
+}
+.enterotp{
+    /* border: 1px solid red; */
+    width: 400px;
+    height: 400px;
+
+}
+.alert{
+    width: 50px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.inputbox{
+    /* border: 1px solid black; */
+    display: flex; 
+    margin: auto;
+}
+
+.input{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 10px;
+}

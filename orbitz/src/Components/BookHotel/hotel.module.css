@@ -59,7 +59,7 @@
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     background-color: white !important;
     z-index: 7;
   }
@@ -123,6 +123,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 60%;
+    margin-bottom: 50px;
   }
   .others p {
     font-size: 15px;

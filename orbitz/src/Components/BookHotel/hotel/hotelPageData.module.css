@@ -60,7 +60,7 @@
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     background-color: white !important;
     z-index: 7;
   }

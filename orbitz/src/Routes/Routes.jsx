@@ -1,15 +1,15 @@
 
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-// import PaymentPart from '../Components/Payments/Payment'
+
 import HomePage from '../Pages/HomePage'
 import Hotel  from "../Pages/Hotels"
 import Otp from "../Pages/Otp"
-// import Otp from "../Pages/OTP/Otp"
+
 import SignIn from "../Pages/Signin"
 import Thanks from "../Pages/Thankyou"
 import SignUp from "../Pages/Signup"
-// import Hotel from "../Hotel/Hotel"
+
 import BookHotel from '../Components/BookHotel/BookHotel'
 import { NewPayment } from '../Pages/newpayment/newPayment'
 
@@ -25,8 +25,7 @@ const AllRoutes = () => {
             } />
             <Route path="hotels/:id" element={<BookHotel/>} /> 
 
-            {/* <Route path='/payment' element={<PaymentPart/>} /> */}
-            {/* <Route path='/otp' element={<Otp/>} /> */}
+           
              <Route path="/payment" element={<NewPayment/>} />
                <Route path='/otp' element={<Otp/>}  />
             <Route path='/thanks' element={<Thanks/>} /> 

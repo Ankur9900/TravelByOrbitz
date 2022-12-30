@@ -177,7 +177,7 @@ const HomepageBody = () => {
             {/* more destination? below*/}
             <div className={styles.more_destination}>
                 <h2>More destinations</h2>
-                <div>
+                <div className={styles.more}>
                     <div>
                         <h4>Destination deals</h4>
                         <IoIosArrowDown style={{ cursor: "pointer", fontSize: "1.3rem" }} />
@@ -192,7 +192,7 @@ const HomepageBody = () => {
                     </div>
 
                 </div>
-                <div>
+                <div className={styles.more}>
                     <div>
                         <h4>Top Vacation destination</h4>
                         <IoIosArrowDown style={{ cursor: "pointer", fontSize: "1.3rem" }} />

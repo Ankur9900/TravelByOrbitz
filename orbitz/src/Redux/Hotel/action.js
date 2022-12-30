@@ -114,13 +114,3 @@ export const gethotel = (payload)=> (dispatch) => {
 }
 
 
-export const search = (payload) => (dispatch) => {
-  dispatch(searchRequest(payload));
-  axios.get(`https://orbitz-heroku-data.herokuapp.com/hotels?city=${payload.city}`)
-      .then((res) => {
-          dispatch(searchSuccess(res.data));
-      })
-      .catch((err) => {
-          dispatch(searchFailure(err));
-      })
-}

@@ -25,6 +25,7 @@ import { Link, useNavigate } from "react-router-dom";
 import useRazorpay from "react-razorpay";
 import swal from "sweetalert";
 import "./payment.css";
+import Navbar from './../../Components/Navbar/Navbar';
 
 export const NewPayment = () => {
   const navigate = useNavigate();
@@ -123,6 +124,7 @@ export const NewPayment = () => {
   if (loading) {
     return (
       <>
+      
         <Spinner
           thickness="4px"
           speed="0.65s"
@@ -140,6 +142,7 @@ export const NewPayment = () => {
   } else {
     return (
       <>
+      <Navbar/>
         <Box
           className="form"
           sx={{
@@ -156,7 +159,7 @@ export const NewPayment = () => {
           >
             <br />
             <br />
-            <h1> User details</h1>
+            <h1> USER DETAILS</h1>
             <Box className="userdetail">
             {error && (
                 <Alert status="error">
@@ -198,6 +201,7 @@ export const NewPayment = () => {
                 <FormControl isRequired>
                   <FormLabel>Mobile No.</FormLabel>
                   <PhoneInput
+                    width="200px"
                     defaultCountry="IN"
                     value={number}
                     onChange={setNumber}
@@ -230,8 +234,9 @@ export const NewPayment = () => {
             style={{ display: temp ? "block" : "none" }}
           >
             <FormControl isRequired>
-              <Heading textAlign={"center"} mb={"4"}>
-                Enter OTP
+            <h1>Enter OTP</h1>
+              <Heading textAlign={"center"} mb={"6"}>
+                {/* Enter OTP */}
               </Heading>
               {error && (
                 <Alert status="error">
@@ -239,26 +244,29 @@ export const NewPayment = () => {
                   {error}
                 </Alert>
               )}
-              <Box>
-                <FormLabel>OTP</FormLabel>
-                <PinInput onChange={(e) => setOtp(e)} otp>
+              
+              <Box className="box">
+                <FormLabel> </FormLabel>
+                <PinInput className="pininput"  onChange={(e) => setOtp(e)} otp>
                   <PinInputField className="input" />
                   <PinInputField className="input" />
                   <PinInputField className="input" />
                   <PinInputField className="input" />
                   <PinInputField className="input" />
                   <PinInputField className="input" />
+                  <br/>
                 </PinInput>
               </Box>
+
             </FormControl>
 
             <Box
-              mt={2}
+              mt={6}
               w={"100%"}
               textAlign={"center"}
               display={"flex"}
               gap={"2rem"}
-              justifyContent={"right"}
+              justifyContent={"center"}
             >
               <Button
                 onClick={skeletonFunction}

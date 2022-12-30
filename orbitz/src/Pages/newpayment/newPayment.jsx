@@ -287,4 +287,5 @@ export const NewPayment = () => {
       </>
     );
   }
+  
 };

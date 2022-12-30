@@ -90,8 +90,8 @@ h1{
 }
 
 input{
-    width: 40px;
-    height: 40px;
+    /* width: 40px; */
+    /* height: 40px; */
     margin: 3px;
     outline: none;
     text-align: center;

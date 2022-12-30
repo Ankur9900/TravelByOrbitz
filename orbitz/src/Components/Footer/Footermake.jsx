@@ -12,7 +12,10 @@ export const useStyles = makeStyles((theme) => ({
              borderBottom:"1px solid #0090BA"
          }
     },
- 
+    
+     logo:{
+        width:"10px",
+     },
  
     Box2: {
         margin: "0.5% 0",

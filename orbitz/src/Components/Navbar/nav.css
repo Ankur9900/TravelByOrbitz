@@ -1,4 +1,111 @@
-.navcss p{
-    border:"1px solid red";
-    /* display:"flex"; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+.navbar {
+    /* background-color: rgb(37, 39, 53); */
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 1em;
+    /* background: rgb(16, 16, 169); */
+    background-color: #00253c;
+    color: #fff;
+    
+}
+
+.logo{
+  font-size: 30px;
+}
+
+.navbar_logo_div {
+  border: 1px solid red;
+  display: flex;
+   place-items: center;
+    width: 35%;
+    margin-left: 10%;
+}
+
+
+.nav-links{
+     display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      width: 75%;
+      gap: 10px;
+     color: #fff;
+}
+
+.Home
+.Signup
+{
+     text-decoration: none;
+     color: rgb(211, 211, 211);
+     font-size: 20px;
+     padding: 10px 20px;
+     margin: 0 10px;
+     cursor: pointer;
+}
+
+.Signup{
+ border: 1px solid rgb(106, 199, 14);
+}
+
+.mobile-menu-icon{
+     display: none;
+}
+
+
+@media screen  and (max-width:800px){
+      .logo{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+      }
+      .nav-links{
+         display: none;
+      }
+      .nav-links-mobile{
+         position: absolute;
+         display: block;
+         list-style: none;
+         background-color: #eaeaea;
+         left: 0;
+         top: 70px;
+         width: 100%;
+         transition: all 0.5s  ease-out;
+      }
+
+      .Home,
+      .Signup{
+     color: rgb(1, 0, 0);
+     text-align: center;
+     padding: 30px ;
+     width: 100%;
+     transition: all 0.5s ease;
+     text-align: center;
+      }
+
+    .Signup{
+        border: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: #fff;
+        background-color: rgb(47, 22, 213);
+        border: none;
+        outline: none;
+        top: 10px;
+        right: 25px;
+    }
+
+}
+

@@ -1,6 +1,7 @@
 
 
-import { NewPayment } from './Pages/newpayment/newPayment';
+import Nav from './Components/Navbar/Nav';
+
 import AllRoutes from './Routes/Routes';
 
 
@@ -9,7 +10,7 @@ function App() {
   return (
     <div className="App">
        <AllRoutes/>
-
+   
     </div>
   )
 

@@ -22,12 +22,8 @@ const Hotel = () => {
   const dispatch = useDispatch();
 
   const data = useSelector((state) => state.hotel.data);
-  console.log("data",data)
+  // console.log("data",data)
 
-  // useEffect(() => {
-  //     dispatch(fetch_hotel_data(id));
-  //   }, [dispatch,id]);
-  
   useEffect(()=> {
     if(location || data.length===0){
      const  city = searchParams.getAll("city");
@@ -45,10 +41,7 @@ const Hotel = () => {
     
 
 
-  // useEffect(() => {
-  //   dispatch(fetch_hotel_data({page, sortBy}));
-  // }, [dispatch,page,sortBy]);
-
+ 
   return (
     <div className={styles.Bigbox}>
       <Navbar />
@@ -117,7 +110,9 @@ const Hotel = () => {
             </div>
           </div>
         </div>
+
       </div>
+      
       <div className={styles.pagniation}> 
      <button disabled={page===1}  onClick={()=>SetPage(prev=> prev-1)}>prev</button>
      <button>{page}</button>

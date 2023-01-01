@@ -98,7 +98,14 @@
     /* justify-content: space-around; */
     justify-content:space-evenly;
     gap: 40px;
-    width: 98%;
+    /* width: 98%; */
     margin: auto;
-    border:1px solid rgb(217, 217, 217);
+    /* border:1px solid rgb(220, 21, 21); */
+}
+
+@media screen and (max-width:800px) {
+     .bodypart{
+        /* border:1px solid rgb(7, 7, 57); */
+        flex-direction: column;
+     }
 }

@@ -7,6 +7,7 @@ import Footer from "../Components/Footer/Footer"
 import Navbar from '../Components/Navbar/Navbar';
 import  Travel from "./Travel"
 import { HelpBoat } from './HelpBoat';
+import {Travelling} from ".././Home/Travelling";
 
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
         <div style={{ display: "flex", flexDirection: "column",overflowX:"hidden" }}>
             <Navbar />
             <Searchbar/>
+            <Travelling />
             <HomepageBody />
              <Travel/>
              <HelpBoat/>

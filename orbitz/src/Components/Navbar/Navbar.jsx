@@ -10,9 +10,7 @@ import TRABITZ from "../image/TRABITZ.png"
 import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 
 import { useSelector } from 'react-redux';
-import Signin from './../../Pages/Signin';
 
-// import Signin from"../../
 
 
 
@@ -29,14 +27,14 @@ const Navbar = () => {
       <div className={styles.navbar_logo_div}>
         <Link to="/">
           <img
-            // src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2"
+        
             src={TRABITZ}
             alt="Brand logo"
             width="160px"
             heigth="45px"
           />
         </Link>
-        {/* <section ref={ref}> */}
+      
         <div
           className={styles.more_travel_parent_div}
           onClick={() => {
@@ -101,13 +99,12 @@ const Navbar = () => {
           <NavLink to="#">List your property</NavLink>
           <NavLink to="#">Support</NavLink>
           <NavLink to="#">Trips</NavLink>
-          {/* <NavLink to="#">SignIn</NavLink> */}
+       
         </nav>
         <div className={styles.trbitz}> 
           
         </div>
-        {/* <section ref={ref}> */}
-
+   
         {!auth && <div
           className={styles.signin}
           onClick={() => {

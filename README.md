@@ -6,6 +6,8 @@
 ## [Deployed URL](https://lighthearted-heliotrope-9d7afd.netlify.app/)
 
 https://lighthearted-heliotrope-9d7afd.netlify.app/
+
+prev (https://spiffy-jalebi-2b49bc.netlify.app/)
 ## Homepage
 ![WhatsApp Image 2022-12-23 at 3 28 15 PM](https://user-images.githubusercontent.com/101393850/209316781-020d3618-9e38-4653-b2b5-579fa0dd7c6c.jpeg)
 
